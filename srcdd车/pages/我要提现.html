@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 我要提现 </title>
+    <style>
+.weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {color: #ff8901;} 
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "我要提现",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells txinp_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="txinp_tit">提现金额</div>
+                    <div class="txinp_box"><span>￥</span><input class="weui-input" type="text" value="1000"></div>
+                    <div class="all_money">可提现金额￥8765.28,<span class="coly">全部提现</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">提现到</div>
+            </div>
+        </div>
+        <div class="weui-cells weui-cells_checkbox mt0">
+            <label class="weui-cell weui-check__label" for="x11">
+                <div class="weui-cell__bd">
+                    <p class="x_title">工商银行</p>
+                    <p class="s_text">***** ***** ***** **8601</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" class="weui-check" name="radio1" id="x11">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x12">
+        
+                <div class="weui-cell__bd">
+                    <p class="x_title">工商银行</p>
+                    <p class="s_text">***** ***** ***** **8601</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="radio1" class="weui-check" id="x12" checked="checked">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="weui-btn-area">
+            <a href="#" class="weui-btn weui-btn_primary weui-btn_disabled">提现</a>
+            <div class="tx_tips">2小时内到账</div>
+        </div>
+
+    </div>
+
+    
+
+  
+</div>
+
+@@include('./include/footer.html')
+</body>
+</html>

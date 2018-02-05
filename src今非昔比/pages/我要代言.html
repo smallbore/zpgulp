@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 我要代言 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "我要代言"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="user_menu">
+            <div class="login_img">
+                <img src="../assets/images/tx0.jpg" alt="" class="login_user" />
+            </div>
+            <div class="user_name">我的刘晓明</div>
+            <div class="user_tip">我要为今非昔比代言</div>
+        </div>
+        <div class="wx_box">
+            <img src="../assets/images/app_icon2.png" alt="" />
+        </div>
+        <div class="small_btn">
+            <a href="javascript:;" class="weui-btn weui-btn_primary ">保存图片</a>
+            <a href="javascript:;" class="weui-btn weui-btn_default ">立即下载</a>
+        </div>
+    </div>
+
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function(){
+      
+    })
+</script>
+</body>
+</html>

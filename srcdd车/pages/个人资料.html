@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 个人资料 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "个人资料",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells mt0">
+            <div class="weui-cell weui-cell_access padd10">
+                <div class="weui-cell__bd">
+                    头像
+                </div>
+                <div class="weui-cell__ft">
+                    <img src="../assets/images/tx2.png" class="ft_userimg" />
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    昵称
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="fs28">汤姆鲁斯</div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                     性别
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="fs28">男</div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                     已绑定手机
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="fs28">138****2236</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-btn-area">
+            <a href="#" class="weui-btn weui-btn_primary">保存</a>
+        </div>
+        
+
+    </div>
+
+    
+
+  
+</div>
+
+@@include('./include/footer.html')
+</body>
+</html>

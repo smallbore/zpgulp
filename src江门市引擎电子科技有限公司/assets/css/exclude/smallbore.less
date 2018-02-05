@@ -1,0 +1,111 @@
+// smallbore mixin
+.fwbold (@fwb:bold){
+    font-weight:@fwb;
+}
+.tac (@cen:center){
+    text-align:@cen;
+}
+.pos (@can:absolute){
+    position:@can;
+}
+.bgmax (@url){
+    background-image:url(@url);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.bora (@bor:50%){
+    border-radius:@bor;
+}
+.fs (@size:28px){
+    font-size:@size;
+}
+// smallbore color
+@bgcol:#f7f6f3;
+
+@colbl:#0faffb;
+@colbl2:#8ec93f;
+
+@coly: #f2782e;
+
+@colg: #909090;
+@colg1: #a7a7a7;
+@colg2: #737171;
+@colea:#eaeaea;
+
+@colbk: #262626;
+@colbk2: #393939;
+
+// smallbore font-size;
+@fs18:18px;
+@fs20:20px;
+@fs22:22px;
+@fs24:24px;
+@fs26:26px;
+@fs28:28px;
+@fs30:30px;
+@fs32:32px;
+@fs34:34px;
+@fs36:36px;
+
+/*add*/
+img{max-width: 100%;}
+.no_bg{background:none;}
+.bgcoly{background:@coly;}
+
+.tcolbk{color:@colbk;}
+.colbl{color:@colbl};
+
+.padd10{padding:10px 30px;}
+.pd5{padding:5px 0}
+.pd_b10{padding-bottom:10px;}
+
+.no_mg{margin:0 !important;}
+.ml10{margin-left:10px;}
+
+/*去掉伪类，*/
+.no_t::before,.no_b::after,.no_all::before,.no_all::after{display:none;}
+.no_cen{-webkit-box-align: inherit;-webkit-align-items: inherit;align-items: inherit;}
+.in_cen{-webkit-box-align: center;-webkit-align-items: center;align-items: center;}
+/*去浮动*/
+.clearfix:after, .clearfix:before {display: table;content: " "}
+.clearfix:after {clear: both}
+/*浮动*/
+.fl{ float: left !important;}
+.fr{ float: right !important;}
+/*tip_圆点*/
+
+.m_title{
+    .fs(@fs26);
+    color:@colbk;
+}
+.x_title{
+    .fs(@fs28);
+    color:@colbk;
+}
+.m_text{
+    .fs(@fs26);
+    color:@colbk2;
+}
+.ms_text{
+    .fs(@fs24);
+    color:#666;
+}
+.s_text{
+    .fs(@fs22);
+    color:@colg;
+}
+
+.coly{
+    color:@coly;
+}
+.colr{
+    color:#ff0000;
+}
+
+// smallbore 
+.page-bd{
+    background:@bgcol;
+}
+.weui-cell__hd img{
+    margin-right:0;
+}

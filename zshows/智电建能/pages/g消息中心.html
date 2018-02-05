@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/weui/weui.min.css"/>
+<link rel="stylesheet" href="../assets/css/comm.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title> 消息中心 </title>
+    <style>
+        .weui-tab__bd-item .weui-cells:first-child{margin-top:0;}
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        <div class="header">
+    <div class="header-left">
+        <a href="javascript:history.go(-1)" class="left-arrow"></a>
+    </div>
+    <div class="header-title">消息中心</div>
+    <div class="header-right">
+        <a href="#"></a>
+    </div>
+</div>
+    </div>
+<!-- <link href="http://jqweui.com/dist/css/jquery-weui.css" rel="stylesheet" /> -->
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-tab small_tab">
+            <div class="weui-navbar">
+                <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                    <span style="position:relative;">
+                        消息通知
+                        <span class="weui-badge weui-badge_dot"></span>
+                    </span>
+                </a>
+                <a class="weui-navbar__item" href="#tab2">
+                    <span style="position:relative;">
+                         系统公告
+                        <!-- <span class="weui-badge weui-badge_dot"></span> -->
+                    </span>
+                </a>
+            </div>
+            <div class="weui-tab__bd">
+                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                    <div class="weui-cells">
+                        <div class="weui-cell weui-cell_swiped user_cells" id="swipe1" style="margin-left: 0;margin-right:0;">
+                            <div class="weui-cell__bd">
+                                <a href="g抢单中心.html" class="weui-cell">
+                                    <div class="weui-cell__icon"></div>
+                                    <div class="weui-cell__hd">
+                                        <img src="../assets/images/tx.jpg" class="user_img" />
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <div class="weui-flex" style="padding:3px 0;">
+                                            <div class="weui-flex__item">
+                                                <div class="user_name">梦娜丽莎</div>
+                                            </div>
+                                            <div class="fs20 tr gray90">10分钟前</div>
+                                        </div>
+                                        <div class="gray90 fs24 textone">[温馨提示]您有新的订单，请及时处理！</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <a class="small_del" href="javascript:">
+                                    <img src="../assets/images/del00.png" />
+                                    <div class="">删除</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui-cells">
+                        <div class="weui-cell weui-cell_swiped user_cells" id="swipe1" style="margin-left: 0;margin-right:0;">
+                            <div class="weui-cell__bd">
+                                <a href="g抢单中心.html" class="weui-cell">
+                                    <div class="weui-cell__icon active"></div>
+                                    <div class="weui-cell__hd">
+                                        <img src="../assets/images/tx.jpg" class="user_img" />
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <div class="weui-flex" style="padding:3px 0;">
+                                            <div class="weui-flex__item">
+                                                <div class="user_name">梦娜丽莎</div>
+                                            </div>
+                                            <div class="fs20 tr gray90">10分钟前</div>
+                                        </div>
+                                        <div class="gray90 fs24 textone">[温馨提示]您有新的订单，请及时处理！</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <a class="small_del" href="javascript:">
+                                    <img src="../assets/images/del00.png" />
+                                    <div class="">删除</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="weui-tab__bd-item">
+                    <div class="weui-cells">
+                        <div class="weui-cell weui-cell_swiped user_cells" id="swipe1" style="margin-left: 0;margin-right:0;">
+                            <div class="weui-cell__bd">
+                                <a href="g公告详情.html" class="weui-cell">
+                                    <div class="weui-cell__icon"></div>
+                                    <!-- <div class="weui-cell__hd">
+                                        <img src="../assets/images/tx.jpg" class="user_img" />
+                                    </div> -->
+                                    <div class="weui-cell__bd">
+                                        <div class="weui-flex" style="padding:3px 0;">
+                                            <div class="weui-flex__item">
+                                                <div class="user_name">梦娜丽莎</div>
+                                            </div>
+                                            <div class="fs20 tr gray90">10分钟前</div>
+                                        </div>
+                                        <div class="gray90 fs24 textone">[温馨提示]您有新的订单，请及时处理！</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <a class="small_del" href="javascript:">
+                                    <img src="../assets/images/del00.png" />
+                                    <div class="">删除</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+  
+</div>
+
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.js"></script>
+<!-- <script src="http://jqweui.com/dist/js/jquery-weui.js"></script> -->
+<script>
+    $(function(){
+      $(".small_del").click(function () { $(this).parents('.weui-cells').remove() })
+    })
+</script>
+</body>
+</html>

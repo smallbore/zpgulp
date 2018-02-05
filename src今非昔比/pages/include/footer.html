@@ -1,0 +1,18 @@
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.js"></script>
+<script>
+    $(function () {
+        $(".header-right").on("click", ".menu_icon", function (e) {
+            $(".right_menu").slideToggle(200);
+        })
+        $(document).bind("click", function (e) {
+            var flas = $(".right_menu").css("display");
+            if (flas === "block") {
+                if ($(e.target).closest(".header-right").length === 0) {
+                    $(".right_menu").slideToggle(200);
+                }
+            }
+
+        });
+    })
+</script>

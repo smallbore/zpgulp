@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 登陆页 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "登陆页",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd" style="background:#fff" >
+        <!-- 页面内容-->
+        <div class="logo-top">
+            <div class="logo-bg"><img src="../assets/images/login_bg01.jpg" style="width:100%;display:block;"></div>
+            <div class="logo_img">
+                <img src="../assets/images/s_logo.png" />
+            </div>
+            <div class="logo_name">智能充电桩服务平台</div>
+        </div>
+        <div class="form-box">
+            <div class="weui-cells weui-cells_form no_t">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">
+                            <img src="../assets/images/login00.png" >
+                        </label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text" placeholder="用户名/手机号" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">
+                            <img src="../assets/images/login01.png">
+                        </label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input small-pass" type="password" placeholder="密码">
+                    </div>
+                    <div class="weui-cell__ft">
+                        <div class="pass-hide"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="btn-box" style="margin-top:40px;">
+                <a href="###" class="small_btn login_btn">登陆</a>
+            </div>
+            <div class="weui-cell no_t" style="padding-top:5px">
+                <div class="weui-cell__bd">
+                    <!-- <a href="###" class="gray90 fs24">我要注册</a> -->
+                </div>
+                <div class="weui-cell__ft">
+                    <a href="###" class="gray90">忘记密码？</a>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="zhuche-box" href="#">注册成为商家</a>
+    </div>
+
+  
+  
+</div>
+
+@@include('./include/footer.html')
+
+<script>
+    $(function(){
+         //login password show and hide;
+        $(".pass-hide").on("click", function () {
+            $(this).toggleClass("pass-show");
+            var fale = $(this).is(".pass-show");
+            if (fale) {
+                $(".small-pass").attr("type", "text");
+            } else {
+                $(".small-pass").attr("type", "password");
+            }
+            // fale ? $(".small-pass") : $(".small-pass").attr("type","password");
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+.search-box{
+  z-index: 9;
+  position: fixed;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  box-shadow: 0px 3px 30px 0px rgba(15, 175, 251, 0.1);/*no*/
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  .icon_search{
+    width: 34px;
+    height: 34px;
+  }
+  .bor-1px-l:before{
+    border-left-color: #ddd;
+  }
+  .search_btn{
+    display: inline-block;
+    padding-left: 36px;
+    padding-right: 10px;
+    color: #212121;
+  }
+}
+.amap-icon{
+  img{
+    width: 100%;
+  }
+}
+
+#container{
+  overflow: hidden;
+}
+.amap-logo,.amap-copyright{
+  display: none !important;
+}
+
+.weui-popup__container  .pop-search-cells{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 6px;/*no*/
+}
+#searchPop .weui-popup__modal{
+  bottom: auto;
+  top: 30px;
+}
+.pop-search-cells .icon_search{
+  width: 34px;
+  height: 34px;
+}
+.pop-search-cells .search_btn{
+  display: inline-block;
+  padding-left: 36px;
+  padding-right: 10px;
+  color: #212121;
+}
+.bor-1px-l:before{
+  border-left-color: #ddd;
+}
+.pop-search-cells .weui-panel__bd .weui-cell{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pop-search-cells .weui-panel__bd{
+  height: 680px;
+  overflow: auto;
+}
+
+.pop-search-result{
+  padding-top: 50px;
+ .popres_hd{
+   .weui-cell{
+     padding-top: 10px;
+     margin-right: 35px;
+     margin-left: 35px;
+   }
+   .sbcx_resbg{
+     background-image: url("../images/sbcx_resbg.png");
+     background-size: 100%;
+     background-repeat: no-repeat;
+     height: 116px;
+     text-align: center;
+     .avatar{
+       position: relative;
+       top: -50px;
+       width: 120px;
+       height: 120px;
+       padding: 10px;
+       background-color: #fff;
+       border-radius: 50%;
+       box-shadow: 0px 0px 15px 0px rgba(15, 175, 251, 0.12);/*no*/
+     }
+   }
+
+ }
+ .popres_bd{
+   padding-top: 20px;
+   background-color: #fff;
+   .weui-btn{
+     border-radius: 6px;/*no*/
+   }
+   .weui-cell__hd{
+     width: 380px;
+     padding-right: 20px;
+   }
+   .weui-cell{
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin-left: 35px;
+     margin-right: 35px;
+     &:before{
+       display: none;
+     }
+     &.active{
+       background-color: #f6f9fb;
+       border-radius: 10px;
+     }
+   }
+ }
+  .weui-btn-area{
+    padding: 30px;
+    margin: 0;
+  }
+}
+.sbcx_icon_dh{
+  width: 56px;
+  height: 56px;
+}
+.text-muted{
+  color: #bbb;
+}

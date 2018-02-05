@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <link href="../assets/js/Swiper-4.0.7/swiper.min.css" rel="stylesheet">
+    <title> 首页 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "首页"
+        })
+    </div>
+
+    <div class="page-bd" style="background:#fff;">
+        <!-- 页面内容-->
+
+        <!-- link -->
+        <div class="link_box">
+            <a href="购物车.html" class="link_icon">
+                <img src="../assets/images/g_icon04.png" alt="" />
+            </a>
+            <a href="首页.html" class="link_icon">
+                <img src="../assets/images/g_icon05.png" alt="" />
+            </a>
+            <a href="我的.html" class="link_icon">
+                <img src="../assets/images/g_icon06.png" alt="" />
+            </a>
+            <a href="javascript:;" class="link_icon">
+                <img src="../assets/images/g_icon07.png" alt="" />
+            </a>
+        </div>
+        <!-- link -->
+        <div class="swiper_box">
+            <div class="swiper-container" id="swipor1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../assets/images/banner2.jpg" alt="" class="swimg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/banner2.jpg" alt="" class="swimg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/banner2.jpg" alt="" class="swimg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="weui-loadmore weui-loadmore_line small_line">
+            <span class="weui-loadmore__tips">热销产品</span>
+        </div>
+        <div class="swiper_list">
+            <div class="swiper-container" id="swipor2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon08.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon09.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon10.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon08.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon09.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon08.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon09.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon10.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon08.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_box">
+                            <img src="../assets/images/g_icon09.png" />
+                            <div class="x_title">66基因</div>
+                            <div class="m_text">乳腺基因检测</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="weui-cells no_all gao_cells">
+            <a class="weui-cell" href="#">
+                <div class="weui-cell__hd gao_right">
+                    <img src="../assets/images/g_icon03.png" alt="" class="gao_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_text">我的检测订单和报告</div>
+                    <span class="gao_cells_btn">您还没有报告</span>
+                </div>
+            </a>
+        </div>
+        <div class="weui-cells no_all gao_cells">
+            <a class="weui-cell" href="#">
+                <div class="weui-cell__hd gao_right">
+                    <img src="../assets/images/g_icon00.png" alt="" class="gao_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_text">平台服务流程</div>
+                </div>
+            </a>
+        </div>
+        <div class="Article-list">
+            <a class="weui-cell weui-cell_access" href="#">
+                <div class="weui-cell__bd">
+                    <div class="alist_title">基因世界</div>
+                </div>
+                <div class="weui-cell__ft">更多</div>
+            </a>
+            <a class="weui-cell no_t" href="#">
+                <div class="weui-cell__td">
+                    <div class="art_img"><img src="../assets/images/pro04.jpg"></div>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="weui-media-box__title">英国发现智商基因高智商人物</div>
+                    <div class="weui-media-box__desc">英国发现智商基因，世界各国高智商人物排行榜。12月22日报道，此前已有研究指出人类智商</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="bottom-tabbar">
+        <a class="bottom_link" href="#">在线咨询</a>
+        <a class="bottom_link" href="#">快捷购买</a>
+    </div>
+</div>
+
+
+@@include('./include/footer.html')
+
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+    var mySwiper1 = new Swiper('#swipor1', {
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        loop: true,
+    })
+    var mySwiper2 = new Swiper('#swipor2', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    })
+</script>
+</body>
+</html>

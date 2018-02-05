@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 我的钱包 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "我的钱包",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells money_top">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="money_box">￥<span>2860</span>.81</div>
+                    <div class="money_tip">我的余额</div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells money_more">
+            <div class="weui-cell">
+                <a class="weui-cell__bd" href="#">
+                    <img src="../assets/images/icon_wdk.png" alt="" class="more_icon" />
+                    <span class="more_item">我的银行卡</span>
+                </a>
+                <a class="weui-cell__bd" href="#">
+                    <img src="../assets/images/icon_qb.png" alt="" class="more_icon" />
+                    <span class="more_item">我要提现</span>
+                </a>
+            </div>
+        </div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="m_title">支付订单</div>
+                    <div class="s_text">2017/08/21 12:00</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="x_title">-24.86</div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="m_title">提现</div>
+                    <div class="s_text">2017/08/21 12:00</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="x_title">-150.00</div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="m_title">系统退款</div>
+                    <div class="s_text">2017/08/21 12:00</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="x_title coly">+80.00</div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="m_title">支付订单</div>
+                    <div class="s_text">2017/08/21 12:00</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="x_title">-30.60</div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+  
+  
+</div>
+
+@@include('./include/footer.html')
+</body>
+</html>

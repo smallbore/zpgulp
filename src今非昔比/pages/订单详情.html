@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>订单详情 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "订单详情"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells ding_adds">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/app_icon1.png" alt="" class="adds_icon" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">
+                        收货人: 谢名华
+                        <span class="fr">187****4562</span>
+                    </div>
+                    <div class="s_title">收货地址：广东省 广州市 天河区 天河北路都市华庭直街201号</div>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </div>
+        </div>
+        <div class="weui-cells pro_cells">  
+            <div class="weui-cell border-left_0">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">
+                        乳腺基因检测
+                    </div>
+                    <div class="x_title">
+                        ￥388.00
+                    </div>
+                </div>
+                <div class="weui-cell__ft">×10</div>
+            </div>
+            <div class="weui-cell " >
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">
+                        乳腺基因检测
+                    </div>
+                    <div class="x_title">
+                        ￥388.00
+                    </div>
+                </div>
+                <div class="weui-cell__ft">×10</div>
+            </div>
+            <div class="weui-cell pd20">
+                <div class="weui-cell__bd">
+                </div>
+                <div class="weui-cell__ft" >
+                    <div class="x_title">订单总价:
+                        <span class="z_text">￥1580.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="weui-cells pro_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd padd_text">
+                    <div class="m_text">订单编号: 5121211212121</div>
+                    <div class="m_text">下单时间: 2017-12-12 12:36:251</div>
+                    <div class="m_text">购买备注: 您好，我要出差去了，请安排早点检查</div>
+                    <div class="m_text">微信支付: ￥1580.00</div>
+                    <div class="m_text">支付时间: 2017-12-12 12:40:26</div>
+                    <div class="m_text">支付金额: ￥20.00</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function () {
+       
+    })
+</script>
+</body>
+</html>

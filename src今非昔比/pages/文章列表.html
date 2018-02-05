@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>文章列表 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "文章列表"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-tab">
+            <div class="weui-navbar">
+                <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                     全部
+                </a>
+                <a class="weui-navbar__item" href="#tab2">
+                     精准医疗
+                </a>
+                <a class="weui-navbar__item" href="#tab3">
+                     行业动态
+                </a>
+                <a class="weui-navbar__item" href="#tab4">
+                     科普天地
+                </a>
+                <a class="weui-navbar__item" href="#tab5">
+                     名家专栏
+                </a>
+            </div>
+            <div class="weui-tab__bd">
+                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                    <div class="weui-cells pro_cells">
+                        <a class="weui-cell border-left_0" href="文章详情.html">
+                            <div class="weui-cell__hd">
+                                <img src="../assets/images/pro02.jpg" alt="" class="art_img" />
+                            </div>
+                            <div class="weui-cell__bd art_bd">
+                                <div class="m_title">精准医疗的道路很漫长，需要不断</div>
+                                <div class="m_text">2017-10-23</div>
+                                <div class="s_title">
+                                    肿瘤是一种病因还不明确的疾病，所以还需深入研究肿瘤真正的机制和发病原因
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell border-left_0" href="文章详情.html">
+                            <div class="weui-cell__hd">
+                                <img src="../assets/images/pro02.jpg" alt="" class="art_img" />
+                            </div>
+                            <div class="weui-cell__bd art_bd">
+                                <div class="m_title">精准医疗的道路很漫长，需要不断</div>
+                                <div class="m_text">2017-10-23</div>
+                                <div class="s_title">
+                                    肿瘤是一种病因还不明确的疾病，所以还需深入研究肿瘤真正的机制和发病原因
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </div>
+                <div id="tab2" class="weui-tab__bd-item">
+                    <div class="weui-cells pro_cells">
+                        <a class="weui-cell border-left_0" href="文章详情.html">
+                            <div class="weui-cell__hd">
+                                <img src="../assets/images/pro02.jpg" alt="" class="art_img" />
+                            </div>
+                            <div class="weui-cell__bd art_bd">
+                                <div class="m_title">精准医疗的道路很漫长，需要不断</div>
+                                <div class="m_text">2017-10-23</div>
+                                <div class="s_title">
+                                    肿瘤是一种病因还不明确的疾病，所以还需深入研究肿瘤真正的机制和发病原因
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="tab3" class="weui-tab__bd-item">
+                    <h2>333</h2>
+                </div>
+                <div id="tab4" class="weui-tab__bd-item">
+                    <h2>444</h2>
+                </div>
+                <div id="tab5" class="weui-tab__bd-item">
+                    <h2>555</h2>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function () {
+       
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.boxs(){
+  box-shadow: 2px 4px 18px 0px rgba(4, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.index_top{
+  background-image: url("../images/indextopbg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 152px;
+  .top-box{
+    position: relative;
+    margin:0 24px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    .setting{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 60px;
+      height:60px;
+      background-image: url("../images/icon_set.png");
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 9;
+      &:active{
+        background-color: rgba(246,246,246,0.6);
+      }
+    }
+    .boxs();
+    text-align: center;
+    background-image: url("../images/topboxbg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    .weui-flex{
+      margin-top: 38px;
+      line-height: 1.4;
+    }
+    .has_upgrade_btn{
+      span:first-child{
+        padding-left: 120px;
+      }
+    }
+    .txbox{
+      transform: translateY(-50%);
+      margin-bottom: -56px;
+      .avatar{
+        border-radius: 50%;
+        box-shadow: 2px 4px 10px 0px rgba(4, 0, 0, 0.1);
+        width: 125px;
+        height: 125px;
+        border: solid #fff 2px;/*no*/
+      }
+    }
+  }
+}
+.card{
+  .boxs;
+  background-color: #fff;
+  margin: 24px;
+  padding: 20px 0;
+  .card_title{
+    font-size: 28px;
+    padding: 15px 35px;
+    font-weight: 400;
+  }
+}
+.index_grids{
+  .weui-grid__icon{
+    width: 88px;
+    height: 88px;
+  }
+  .weui-grid__label{
+    font-size: 22px;
+  }
+  &:after,&:before{
+    display: none;
+  }
+  .weui-grid{
+    padding: 20px 0;
+    width: 25%;
+    &:after,&:before{
+      display: none;
+    }
+    &:active{
+      background-color: rgba(246,246,246,0.6);
+    }
+  }
+}

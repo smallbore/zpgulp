@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>产品列表 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "产品列表"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-tab">
+            <div class="weui-navbar">
+                <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                     全部
+                </a>
+                <a class="weui-navbar__item" href="#tab2">
+                     心脑防护
+                </a>
+                <a class="weui-navbar__item" href="#tab3">
+                     特色基因
+                </a>
+                <a class="weui-navbar__item" href="#tab4">
+                     心脑防护
+                </a>
+            </div>
+            <div class="weui-tab__bd">
+                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                    <div class="weui-cells pro_cells">
+                        <a class="weui-cell border-left_0" href="产品详情.html">
+                            <div class="weui-cell__hd">
+                                <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="x_title">
+                                    乳腺基因检测
+                                </div>
+                                <div class="y_text">
+                                    ￥388.00
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd">
+                                <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="x_title">
+                                    乳腺基因检测
+                                </div>
+                                <div class="y_text">
+                                    ￥388.00
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="weui-tab__bd-item">
+                    <div class="weui-cells pro_cells">
+                        <a class="weui-cell border-left_0" href="产品详情.html">
+                            <div class="weui-cell__hd">
+                                <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="x_title">
+                                    乳腺基因检测
+                                </div>
+                                <div class="y_text">
+                                    ￥388.00
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="tab3" class="weui-tab__bd-item">
+                    <h2>333</h2>
+                </div>
+                <div id="tab4" class="weui-tab__bd-item">
+                    <h2>444</h2>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function () {
+       
+    })
+</script>
+</body>
+</html>

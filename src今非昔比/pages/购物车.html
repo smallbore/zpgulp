@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>购物车 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "购物车"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        
+        <div class="weui-cells pro_cells">
+            <div class="weui-cell pd20">
+                <div class="weui-cell__hd">
+                    <div class="title_icon"></div>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="m_title">购物车清单</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="del_img">
+                        <img src="../assets/images/my_icon2.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cell border-left_0">
+                <div class="weui-cells_checkbox" style="margin-right:10px;">
+                    <label class="weui-check__label">
+                        <input type="checkbox" class="weui-check" name="checkbox1" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                    </label>
+                </div>
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">
+                        乳腺基因检测
+                    </div>
+                    <div class="y_text">
+                         ￥388.00
+                    </div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="count">
+                        <a class="count_btn count_minus limit"></a>
+                        <input class="count_number" type="number" value="1">
+                        <a class="count_btn count_plus"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cells_checkbox" style="margin-right:10px;">
+                    <label class="weui-check__label">
+                        <input type="checkbox" class="weui-check" name="checkbox1">
+                        <i class="weui-icon-checked"></i>
+                    </label>
+                </div>
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">
+                        乳腺基因检测
+                    </div>
+                    <div class="y_text">
+                        ￥388.00
+                    </div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="count">
+                        <a class="count_btn count_minus limit"></a>
+                        <input class="count_number" type="number" value="1">
+                        <a class="count_btn count_plus"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div class="bottom-tabbar tdan_tabbar ">
+        <a class="bottom_link weui-cells_checkbox" href="#">
+            <label class="weui-check__label">
+                <input type="checkbox" class="weui-check" name="checkbox" checked="checked">
+                <i class="weui-icon-checked"></i>
+                <span class="ver_middle">全选</span>
+            </label>
+        </a>
+        <a class="close_tdan m_title" href="#">
+            共计
+            <span class="z_text">￥158.00</span>
+        </a>
+        <a class="weui-btn weui-btn_primary" href="提交订单.html">结算</a>
+    </div>
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function () {
+       
+    })
+</script>
+</body>
+</html>

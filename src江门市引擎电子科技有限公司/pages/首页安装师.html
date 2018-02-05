@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <link href="../assets/js/Swiper-4.0.7/swiper.min.css" rel="stylesheet">
+    <title> 首页 </title>
+    <style>
+        .swiper-container{
+			background:#fff;
+		}
+		#swipor1 .swiper-slide{
+			height: 2.8rem;
+			line-height: 2.8rem;
+			text-align: center;
+        }
+        .swimg{vertical-align: middle;}
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "首页",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="link_myicon">
+            <img src="../assets/images/my_icon.png" alt="" />
+        </div>
+        <div class="swiper_box">
+            <div class="swiper-container" id="swipor1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../assets/images/banner1.jpg" alt="" class="swimg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/banner1.jpg" alt="" class="swimg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/banner1.jpg" alt="" class="swimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells name_cells mt0">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="fs30">EPP汽车节油器 燃油净化器</div>
+                    <div class="money_new">
+                        <span class="money_tip">￥</span><span class="money_number">880.00</span>
+                        <span class="money_old">原价:<span class="money_del">￥2880</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-cells name_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/s_icon5.png" alt="" class="title_icon">
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="fs30">产品信息</div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="ms_text">名称：燃油净化器</div>
+                    <div class="ms_text">型号：1号</div>
+                    <div class="ms_text">规格：AT109</div>
+                    <div class="ms_text">颜色：黄金版</div>
+                    <div class="ms_text">功能：提升动力/降低油耗</div>
+                    <div class="ms_text">实用车型：各种排量请参考产品号数</div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells name_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/s_icon5.png" alt="" class="title_icon">
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="fs30">产品信息</div>
+                </div>
+            </div>
+            <div class="imgs_cell">
+                <img src="../assets/images/pro_show1.jpg" alt="" />
+                <img src="../assets/images/pro_show1.jpg" alt="" />
+            </div>
+        </div>
+
+    </div>
+    <div class="jb-btn">
+        <a href="javascript:;" class="weui-btn weui-btn_primary open-popup" data-target="#addimg">上传安装图片</a>
+    </div>
+
+  
+</div>
+<!-- 弹出 -->
+<div id="addimg" class="weui-popup__container addimg_pup">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal addimg-box">
+        <div class="addimg-title">上传图片</div>
+        <div class="addimg_list clearfix">
+            <div class="addimg-fl">
+                <div class="img_pup">
+                    <img src="../assets/images/imgmodel.jpg">
+                    <!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: 0;">×</span> -->
+                </div>
+            </div>
+            <div class="addimg-fl">
+                <div class="img_pup img_pup_btn">
+                    +
+                </div>
+            </div>
+            
+        </div>
+        <div class="weui-flex addimg_btn">
+            <div class="weui-flex__item jb_cancel">
+                <a href="javascript:;" class="weui-btn close-popup">取消</a>
+            </div>
+            <div class="weui-flex__item jb_confirm">
+                <a href="javascript:;" class="weui-btn">确认</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('./include/footer.html')
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+
+<script>
+	var mySwiper1 = new Swiper('#swipor1', {
+        
+    })
+	
+</script>
+
+</body>
+</html>

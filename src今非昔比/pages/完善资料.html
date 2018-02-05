@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 完善资料 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "完善资料"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells no_all">
+            <div class="weui-cell pd10">
+                <div class="weui-cell__bd">
+                    <div class="x_title">头像</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <img src="../assets/images/tx0.jpg" alt="" class="s_userimg" />
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="x_title">姓名</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <input class="weui-input x_title tr" value="谢建华" />
+                    <!-- <div class="x_title">谢建华</div> -->
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_access">
+                <div class="weui-cell__bd">
+                    <div class="x_title">性别</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <input class="weui-input x_title tr" value="女" />
+                    <!-- <div class="x_title">女</div> -->
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="x_title">手机号</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <input class="weui-input x_title tr" value="13875419865" />
+                    <!-- <div class="x_title">13875419865</div> -->
+                </div>
+            </div>
+        </div>
+        <div class="small_btn" style="margin-top:10px;">
+            <a href="javascript:;" class="weui-btn weui-btn_primary ">退出登录</a>
+        </div>
+    </div>
+
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function(){
+      
+    })
+</script>
+</body>
+</html>

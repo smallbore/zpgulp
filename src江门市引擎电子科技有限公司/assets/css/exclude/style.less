@@ -1,0 +1,465 @@
+/* user_cells */
+.user_cells{
+    background:url(../images/s_bg1.jpg) no-repeat;
+    background-size:100% 100%;
+    margin-top:0;
+    padding:30px 0;
+}
+.user_photo{
+    width:98px;
+    height:98px;
+    .bora();
+    padding:2px;/*no*/
+    background:#fff;
+    margin-right:16px;
+    img{
+        width:98px;
+        height:98px;
+        .bora();
+        display:block;
+    }
+}
+.user_tip{
+    .fs(@fs30);
+    color:#fff;
+}
+.user_name{
+    .user_tip();
+}
+
+// 
+.yong_img{
+    height:48px;
+    width:48px;
+    margin:0 auto;
+}
+.weui-cells .s_icon{
+    width:@fs20*2;
+    height:@fs20*2;
+    margin-right:16px;
+}
+/* user_cells */
+
+
+/* money_cells */ 
+.money_cells{
+    .pos(relative);
+    background:url(../images/s_bg2.jpg) no-repeat;
+    background-size:100% 100%;
+    padding:78px 0 60px;
+    .tac();
+    min-height:200px;
+    color:#fff;
+    margin-bottom:80px;
+    .txli_link{
+        .pos();
+        right:@fs30;
+        top:@fs20;
+        .fs(@fs26);
+        color:#fff;
+        text-decoration: underline;
+    }
+}
+.txgo_link{
+    .pos();
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-60px;
+    height:120px;
+    width:120px;
+    .bora();
+    border:2px solid @bgcol;/*no*/
+    /* 背景渐变 */
+background: -moz-linear-gradient(top, #d3db29, #90ca3e);
+background: -webkit-linear-gradient(top, #d3db29, #90ca3e);
+background: -o-linear-gradient(top, #d3db29, #90ca3e);
+    img{
+        display:block;
+        margin:0 auto;
+        width:@fs32;
+        height:@fs32;
+        margin-top:@fs26;
+    }
+    .txgo_text{
+        .fs(@fs24);
+        color:#fff;
+    }
+}
+.money_tip{
+    .fs(@fs26);
+}
+.money_num{
+    .fs(70px);
+}
+
+.money_time{
+    color:@colg2;
+    img{
+        width:20px;
+        height:20px;
+        margin-right:2px;
+        vertical-align: middle;
+    }
+}
+.money_ft{
+    color:@colbl2;
+    .fs(@fs24);
+    .fwbold();
+}
+/* money_cells */
+
+/* 提现 */
+.tix_cells{
+    background:#fff;
+    margin:@fs20;
+    padding:30px 34px;
+    box-shadow: 0 2px 5px rgba(107,107,107,.1);/*no*/
+    .pos(relative);
+    .bora(10px);
+    .txli_link{
+        .pos();
+        right:34px;
+        top:30px;
+        .fs(@fs26);
+        text-decoration: underline;
+    }
+
+}
+.tix_input{
+    .fs(0);
+    border-bottom:1px solid #eee;
+    margin-bottom:32px;
+    padding:30px 0 10px;
+    span{
+        .fs(42px);
+        .fwbold();
+    }
+    .weui-input{
+        width:90%;
+        .fs(42px);
+        .fwbold();
+    }
+}
+.tix_tip{
+    .fs(@fs24);
+    color:@colg;
+}
+.btn_tip{
+    .fs(@fs22);
+    color:@colg1;
+    text-align: center;
+    padding:@fs20 0;
+}
+
+.small_btn{
+    padding:56px 120px;
+    .weui-btn_primary{
+        box-shadow: 0 3px 6px rgba(144,202,62,.5);/*no*/
+    }
+}
+/* 提现 */
+
+// team_cells
+.team_cells{
+    background:url(../images/s_bg3.jpg) no-repeat;
+    background-size:100% 100%;
+    .tac();
+    padding:40px 0 20px;
+    .user_photo{
+        margin:0 auto 10px;
+        width:120px;
+        height:120px;
+        img{
+            width:120px;
+            height:120px;
+        }
+    }
+}
+
+.team_list{
+    .pos();
+    top:290px;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#fff;
+    overflow: hidden;
+    .team_left{
+        .pos();
+        top:0;
+        left:0;
+        width:166px;
+        bottom:0;
+        .tac();
+        overflow-x: hidden;overflow-y: auto;-webkit-overflow-scrolling: touch;
+        &_li{
+            color:#323232;
+            padding:20px 0;
+            border-bottom:1px solid #eee;/*no*/
+            .fs(@fs22);
+            .team_left_bd{
+                color:#949494;
+                .ellipsisLn(1);
+            }
+            &.active{
+                .pos(relative);
+                color:@colbl2;
+                 .team_left_bd{
+                    color:@colbl2;
+                }
+                &::after{
+                    content:"";
+                    .pos();
+                    height:60%;
+                    width:8px;
+                    background:@colbl2;
+                    top:50%;
+                    transform:translateY(-50%);
+                    left:0;
+                    .bora(10px);
+                }
+            }
+        }
+    }
+    .team_right{
+        .pos();
+        top:0;
+        left:166px;
+        right:0;
+        bottom:0;
+        overflow-x: hidden;overflow-y: auto;-webkit-overflow-scrolling: touch;
+        border-left:1px solid #eee;
+        .weui-cells{
+            margin-top:0;
+        }
+        .weui-cell{
+            padding:24px 20px;
+            .m_title{
+                .fwbold();
+            }
+        }
+    }
+    .list_uimg{
+        width:100px;
+        height:100px;
+        margin-right:20px;
+        .bora();
+    }
+}
+// team_cells
+
+// tui_warp
+.tui_warp{
+    .pos();
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:url(../images/s_bg4.jpg) no-repeat;
+    background-size:100% 100%;
+    .wx_box{
+        padding:20px;
+        width:300px;
+        height:300px;
+        line-height: 300px;
+        .tac();
+        background:url(../images/s_wxbg.png) no-repeat;
+        background-size:100% 100%;
+        .pos();
+        top:36%;
+        left:0;
+        right:0;
+        margin:0 auto;
+        img{
+            width:100%;
+            height:100%;
+            background:#fff;
+            vertical-align: middle;
+        }
+    }
+    .wx_tip{
+        .pos();
+        top:70%;
+        .fs(@fs32);
+        .fwbold();
+        color:#fff;
+        left:0px;
+        width:100%;
+        .tac();
+        white-space: nowrap;
+        line-height: initial;
+    }
+}
+// tui_warp
+
+// dan_cells
+.dan-box{
+    .dan_cells:first-child{
+        margin-top:0;
+    }
+}
+.dan_cells{
+    .weui-cell{
+        padding:20px 30px;
+    }
+    .weui-img{
+        width:140px;
+        height:140px;
+        .bora(10px);
+        overflow: hidden;
+        box-shadow: 2px 2px 6px rgba(130,130,130,.5);/*no*/
+        margin-right:20px;
+    }
+}
+// dan_cells
+
+// name_cells
+.name_cells{
+    .weui-cell{
+        padding:20px 30px;
+    }
+    .title_icon{
+        width:@fs32;
+        height:@fs32;
+        margin-right:10px;
+    }
+}
+.money_new{
+    .fs(@fs22);
+    color:#a2a1a1;
+    .money_tip{
+        color:#ff602d;
+    }
+    .money_number{
+        color:#ff602d;
+        .fs(@fs36);
+        .fwbold();
+    }
+    .money_del{
+        text-decoration: line-through;
+    }
+}
+.imgs_cell{
+    .pos(relative);
+    padding:0;
+    text-align: center;
+    img{
+        display:block;
+    }
+}
+
+.imgs_cell::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;/*no*/
+    border-top: 1px solid #f5f5f5;/*no*/
+    color: #f5f5f5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    left: 15px;/*no*/
+    z-index: 2;}
+
+
+.jb-btn{
+    .weui-btn_primary{
+        .bora(0);
+            /* 背景渐变 */
+background: -moz-linear-gradient(top, #d5dc28, #8ec93f);
+background: -webkit-linear-gradient(top, #d5dc28, #8ec93f);
+background: -o-linear-gradient(top, #d5dc28, #8ec93f);
+    }
+}
+// name_cells
+
+
+// addimg_pup
+.addimg_pup{
+    .addimg-box{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        left:30px;
+        right:30px;
+        background:#fff;
+        z-index: 20;
+        .bora(10px);
+        overflow: hidden;
+        bottom:initial;
+        height: auto;
+        width:initial;
+    }
+    .addimg-title{
+        .tac();
+        font-size:30px;
+        padding:20px 0;
+        background: -moz-linear-gradient(top, #d5dc28, #8ec93f);
+        background: -webkit-linear-gradient(top, #d5dc28, #8ec93f);
+        background: -o-linear-gradient(top, #d5dc28, #8ec93f); 
+        color:#fff;
+    }
+    .addimg_btn{
+        padding:0 20px;
+        .weui-flex__item{
+            padding:30px;
+        }
+    }
+    .jb_cancel{
+        .weui-btn{
+            height:70px;
+            line-height: 70px;
+            color:@colbl2;
+            border:1px solid @colbl2;
+        }
+    }
+    .jb_confirm{
+        .weui-btn{
+            height:70px;
+            line-height: 70px;
+            background: -moz-linear-gradient(top, #d5dc28, #8ec93f);
+            background: -webkit-linear-gradient(top, #d5dc28, #8ec93f);
+            background: -o-linear-gradient(top, #d5dc28, #8ec93f); 
+        }
+    }
+    .addimg_list{
+        padding:40px 60px;
+        .addimg-fl{
+            float: left;
+            width:50%;
+        }
+        .img_pup{
+            width:170px;
+            height:170px;
+            background:#f1efed;
+            text-align: center;
+            margin:0 auto;
+            .bora(10px);
+            position: relative;
+            img{
+                .bora(10px);
+            }
+        }
+        .img_pup_btn{
+            line-height:170px;
+            font-size:40px;
+        }
+    }
+}
+// addimg_pup
+
+/* 2018/1/25 */
+
+.link_myicon{
+    position:fixed;
+    top:120px;
+    right:30px;
+    width:70px;
+    height:70px;
+    z-index: 11;
+    .bora();
+    box-shadow: 0 0 6px rgba(144,202,62,.5);
+}

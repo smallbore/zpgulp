@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	@@include('./include/header.html')
+    <title> 提现 </title>
+    <style>
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "提现",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+		<!-- 页面内容-->
+        <div class="tix_cells">
+            <a class="txli_link" href="提现记录.html">提现记录</a>
+            <div class="m_title">提现金额</div>
+            <div class="tix_input">
+                <span>￥</span>
+                <input class="weui-input" type="text" placeholder="" value="5000.00" />
+            </div>
+            <div class="tix_tip">额外扣除￥0.00手续费（费率 0.1%）</div>
+        </div>
+        <div class="small_btn">
+            <a href="javascript:;" class="weui-btn weui-btn_primary">提现申请</a>
+            <div class="btn_tip">2小时内到账</div>
+        </div>
+        
+        
+
+    </div>
+
+  
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+	
+	
+</script>
+
+</body>
+</html>

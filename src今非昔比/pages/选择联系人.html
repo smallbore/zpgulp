@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>选择联系人 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "选择联系人"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells card-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="weui-flex">
+                        <div class="weui-flex__item">谢明华</div>
+                        <div>187****4562</div>
+                    </div>
+                    <div class="fs24 text-gray mt10">广东省 广州市 天河区 天河北路都市华庭201号</div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cells_checkbox">
+                    <label class="weui-check__label">
+                        <input type="radio" class="weui-check" name="radio1" checked="checked">
+                        <i class="weui-icon-checked"></i><span>设为编辑</span>
+                    </label>
+                </div>
+                <div class="weui-cell__bd tr">
+                    <div class="action_group">
+                        <a href="#" class="action_edit">
+                            <i class="icon_edit"></i>
+                            <span>编辑</span>
+                        </a>
+                        <a href="#" class="action_del">
+                            <i class="icon_del"></i>
+                            <span>删除</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="weui-cells card-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="weui-flex">
+                        <div class="weui-flex__item">谢明华</div>
+                        <div>187****4562</div>
+                    </div>
+                    <div class="fs24 text-gray mt10">广东省 广州市 天河区 天河北路都市华庭201号</div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cells_checkbox">
+                    <label class="weui-check__label">
+                        <input type="radio" class="weui-check" name="radio1">
+                        <i class="weui-icon-checked"></i><span>设为编辑</span>
+                    </label>
+                </div>
+                <div class="weui-cell__bd tr">
+                    <div class="action_group">
+                        <a href="#" class="action_edit">
+                            <i class="icon_edit"></i>
+                            <span>编辑</span>
+                        </a>
+                        <a href="#" class="action_del">
+                            <i class="icon_del"></i>
+                            <span>删除</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <div class="small_btn">
+        <a href="添加联系人.html" class="weui-btn weui-btn_primary">新增地址</a>
+    </div>
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+   
+</script>
+</body>
+</html>

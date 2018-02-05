@@ -1,0 +1,127 @@
+// smallbore mixin
+.fwbold (@fwb:bold){
+    font-weight:@fwb;
+}
+.tac (@cen:center){
+    text-align:@cen;
+}
+.pos (@can:absolute){
+    position:@can;
+}
+.bgmax (@url){
+    background-image:url(@url);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.bora (@bor:50%){
+    border-radius:@bor;
+}
+.fs (@size:28px){
+    font-size:@size;
+}
+// smallbore color
+@bgcol:#f7f7f7;
+
+@colbl:#3f598a;
+@colbl2:#6a7fa6;
+
+@coly: #f2782e;
+
+@colg: #9b9b9b;
+@colea:#eaeaea;
+
+@colbk: #292828;
+@colbk2: #393939;
+
+@colz:#a25aab;
+
+// smallbore font-size;
+@fs18:18px;
+@fs20:20px;
+@fs22:22px;
+@fs24:24px;
+@fs26:26px;
+@fs28:28px;
+@fs30:30px;
+@fs32:32px;
+@fs34:34px;
+@fs36:36px;
+
+/*add*/
+img{max-width: 100%;}
+.no_bg{background:none;}
+.bgcoly{background:@coly;}
+
+.tcolbk{color:@colbk;}
+.colbl{color:@colbl};
+
+.pd10{padding:10px 30px;}
+.pd20{padding:20px 30px;}
+.pd5{padding:5px 0}
+.pd_b10{padding-bottom:10px;}
+
+.no_mg{margin:0 !important;}
+.ml10{margin-left:10px;}
+
+/*去掉伪类，*/
+.no_t::before,.no_b::after,.no_all::before,.no_all::after{display:none;}
+.no_cen{-webkit-box-align: inherit;-webkit-align-items: inherit;align-items: inherit;}
+.in_cen{-webkit-box-align: center;-webkit-align-items: center;align-items: center;}
+/*去浮动*/
+.clearfix:after, .clearfix:before {display: table;content:""}
+.clearfix:after {clear: both}
+/*浮动*/
+.fl{ float: left !important;}
+.fr{ float: right !important;}
+/*tip_圆点*/
+
+.m_title{
+    .fs(@fs28);
+    color:#3d3d3d;
+}
+.s_title{
+    .fs(@fs24);
+    color:#292828;
+}
+.x_title{
+    .fs(@fs26);
+    color:#292828;
+}
+.m_text{
+    .fs(@fs24);
+    color:#757575;
+}
+.s_text{
+    .fs(@fs22);
+    color:#a6a6a6;
+}
+.y_text{
+    .fs(@fs24);
+    color:@colz;
+}
+.coly{
+    color:@coly;
+}
+.colr{
+    color:#ff0000;
+}
+.colwhite{
+    color:#fff;
+}
+.fstext{font-size:26px;color:#292828;font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;}
+.ver_middle{
+    vertical-align: middle;
+}
+// smallbore 
+.page-bd{
+    background:@bgcol;
+}
+.bgcol{
+    background:@bgcol;
+}
+.fwb{
+    .fwbold();
+}
+.weui-input{
+    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+}

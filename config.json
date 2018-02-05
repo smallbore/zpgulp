@@ -1,0 +1,16 @@
+{
+    "project" : "Gulp", 	
+    "localserver" : {
+        "host" : "localhost",
+        "port" : "8081"
+    },
+    "tinypngapi": "Tinypng API KEY",
+    "sftp" : {
+        "host" : "119.23.202.227",
+        "user" : "king",
+        "pass": "ydq987654321",
+        "port" : "22",
+        "key" : "",
+        "remotePath" :"/home/king/web"
+    }
+}  

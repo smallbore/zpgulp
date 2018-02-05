@@ -1,0 +1,223 @@
+.top_logo{
+    .tac();
+    padding:120px 0 40px;
+    img{
+        width:386px;
+        height:122px;
+    }
+}
+.more_cells{
+    .fs(@fs26);
+    background:#fff;
+    color:@colbk;   
+    padding-bottom:20px;
+    .weui-cell{
+        padding:26px 30px; 
+    }
+    .weui-cell__ft{
+        padding-right:28px;
+        .pos(relative);
+        &::after{
+            content: "";
+            position: absolute;
+            width: 7px; /*no*/
+            height: 7px; /*no*/
+            border: 1px solid #6e6e6e; /*no*/
+            border-width: 1px 0 0 1px;
+            transform: rotate(225deg);
+            top: 8px;
+            right: 0px;
+            transition:all 0.3s ease-out;
+        }
+    }
+    
+    .weui-grids{
+        transition:all 0.3s ease-out;
+        margin-top:-10px;
+        padding:0 20px;
+        height:156px;
+        overflow: hidden;
+        .weui-grid{
+            padding:10px;
+            &::before{
+                display:none;
+            }
+            &::after{
+                display:none;
+            }
+            &:active{
+                background:none;
+            }
+        }
+        
+        .weui-grid_check{
+            background:#f0f2f5;
+            color:@colbk;
+            .tac();
+            .fs(@fs24);
+            line-height: normal;
+            padding:10px 0;
+            .bora(8px);
+            border:1px solid transparent;
+        }
+        .checked{
+            .weui-grid_check{
+                border:1px solid #41b4f5;
+                color:#41b4f5
+            }
+        }
+    }
+}
+.show-cells{
+    .weui-grids{
+        height:auto;
+    }
+    .allshow::after{
+        transform: rotate(45deg);
+        top:14px;
+    }
+}
+
+.sreach_box{
+    border:1px solid #eee;
+    .bora(10px);
+    overflow: hidden;
+    display:flex;
+    align-items:center;
+    padding-left:20px;
+    .weui-input{
+        font-size:24px;
+        width:80%;
+        flex:1;
+    }
+    .input_btn{
+        width:70px;
+        height:70px;
+        background:#41b4f5;
+        display:block;
+        background:#41b4f5 url(../images/sceach00.png) no-repeat;
+        background-size:30px 30px;
+        background-position: center;
+    }
+}
+.more_link{
+    margin-left:16px;
+    font-size:24px;
+    img{
+        width:26px;
+        height:26px;
+    }
+}
+.bottom_wximg{
+    .tac();
+    background:#fff;
+    padding:20px 0;
+    img{
+        width:188px;
+        height:188px;
+    }
+}
+
+// small-model
+.small-model{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(1,1,1,0.6);
+    transform: translateX(100%);
+    transition:all 0.3s ease-out;
+    z-index: 11;
+}
+.translate{
+    transform: translateX(0);
+}
+.small-model_overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.small-model_popup{
+    position: absolute;
+    top:0;
+    left:80px;
+    right:0;
+    bottom:0;
+    background:@bgcol;
+}
+.small-model_box{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    flex-direction: column;
+}
+.small-model_bd{
+    flex:1;
+    padding-bottom:20px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.small-model_ft{
+    .weui-flex{
+        &__item{
+            background:#fff;
+            .tac();
+            padding:18px 0;
+            font-size:28px;
+            .fwbold();
+        }
+        &__item:last-child{
+            background:#41b4f5;
+            color:#fff;
+        }
+    }
+}
+
+/* 0202 */ 
+.biao-cells{
+    .weui-cell{
+        padding:30px 2px;
+        .tac();
+        color:@colbk;
+        .weui-cell__bd{
+            word-wrap:break-word; 
+            word-break:break-all; 
+        }
+    }
+    .order_icon{
+        .pos(relative);
+        &::after{
+            .pos();
+            right:-24px;
+            top:14px;
+            content:"";
+            border:10px solid #828282;
+            border-color:#828282 transparent transparent transparent;
+        }
+    }
+    .order_deg{
+        .pos(relative);
+        &::after{
+            .pos();
+            right:-24px;
+            top:22px;
+            content:"";
+            border:10px solid #828282;
+            border-color:#828282 transparent transparent transparent;
+        }
+         &::before{
+            .pos();
+            right:-24px;
+            top:0px;
+            content:"";
+            border:10px solid #828282;
+            border-color: transparent transparent #828282 transparent;
+        }
+    }
+}

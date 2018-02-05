@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>提交订单 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "提交订单"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells adds_cells">
+            <div class="weui-cell weui-cell_access">
+                <div class="weui-cell__bd">
+                    <div class="x_title">谢名华<span>187****4562</span></div>
+                    <div class="s_title">广东省 广州市 天河区 天河北路都市华庭201号</div>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </div>
+        </div>
+        <div class="weui-cells pro_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">
+                        乳腺基因检测
+                    </div>
+                    <div class="y_text">
+                         ￥388.00
+                    </div>
+                </div>
+                <div class="weui-cell__ft">×10</div>
+            </div>
+        </div>
+        <div class="weui-cell pd20">
+            <div class="wuei-cell__bd x_title">备注</div>
+        </div>
+        <div class="weui-cells mt0">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea fstext" placeholder="亲，有什么特殊需要请注备"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-tabbar tdan_tabbar">
+        <a class="bottom_link" href="#">共计 <span class="z_text">￥158.00</span></a>
+        <a class="close_tdan m_title" href="#">取消订单</a>
+        <a class="weui-btn weui-btn_primary open-popup" data-target="#buy_modal" href="#">立即付款</a>
+    </div>
+</div>
+<!-- 弹出 -->
+<div id="buy_modal" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
+        
+        <div class="weui-cells no_all pro_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd tc">
+                    <div class="m_title">确认付款</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="close_btn close-popup">
+                        <img src="../assets/images/my_icon7.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="weui-cells no_b">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="m_title">可用佣金支付</div>
+                    <div class="m_text">可用佣金支付￥123.00</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="m_title">￥133.00</div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="m_title">您需要支付：<span class="y_text fwb">￥566.00</span></div>
+                </div>
+            </div>
+            <label class="weui-cell weui-cells_checkbox">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/s_icon2.jpg" alt="" class="zf_icon" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">微信支付
+                    </div>
+                </div>
+                <div class="weui-cell__ft weui-check__label">
+                    <input type="radio" class="weui-check" name="radio1" checked="checked">
+                    <i class="weui-icon-checked"></i>
+                </div>
+            </label>
+            <label class="weui-cell weui-cells_checkbox">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/s_icon1.jpg" alt="" class="zf_icon" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">支付宝支付
+                    </div>
+                </div>
+                <div class="weui-cell__ft weui-check__label">
+                    <input type="radio" class="weui-check" name="radio1">
+                    <i class="weui-icon-checked"></i>
+                </div>
+            </label>
+        </div>
+        <a href="#" class="weui-btn weui-btn_primary" style="margin-top:10px;">立即付款</a>
+    </div>
+</div>
+
+@@include('./include/footer.html')
+
+<script>
+    $(function () {
+       
+    })
+</script>
+</body>
+</html>

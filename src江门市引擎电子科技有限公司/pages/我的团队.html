@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	@@include('./include/header.html')
+    <title> 我的团队 </title>
+    <style>
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "我的团队",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="team_cells">
+            <div class="user_photo">
+                <img src="../assets/images/uimg.jpg" alt="" />
+            </div>
+            <div class="user_tip">会员</div>
+            <div class="user_name">smallbore</div>
+        </div>
+        <div class="team_list">
+            <div class="team_left js_check">
+                <div class="team_left_li">
+                    <div class="team_left_hd">所有粉丝</div>
+                    <div class="team_left_bd">36524人</div>
+                </div>
+                <div class="team_left_li active">
+                    <div class="team_left_hd">第一层</div>
+                    <div class="team_left_bd">8952人</div>
+                </div>
+                <div class="team_left_li">
+                    <div class="team_left_hd">第二层</div>
+                    <div class="team_left_bd">6952人</div>
+                </div>
+            </div>
+            <div class="team_right">
+                <div class="weui-cells no_t">
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <img src="../assets/images/uimg.jpg" alt="" class="list_uimg" />
+                        </div>
+                        <div class="weui-cell__bd">
+                            <div class="m_title">金睛の钦</div>
+                            <div class="s_text">关注时间:2016.05.10</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells no_t">
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <img src="../assets/images/uimg.jpg" alt="" class="list_uimg" />
+                        </div>
+                        <div class="weui-cell__bd">
+                            <div class="m_title">金睛の钦</div>
+                            <div class="s_text">关注时间:2016.05.10</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells no_t">
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <img src="../assets/images/uimg.jpg" alt="" class="list_uimg" />
+                        </div>
+                        <div class="weui-cell__bd">
+                            <div class="m_title">金睛の钦</div>
+                            <div class="s_text">关注时间:2016.05.10</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells no_t">
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <img src="../assets/images/uimg.jpg" alt="" class="list_uimg" />
+                        </div>
+                        <div class="weui-cell__bd">
+                            <div class="m_title">金睛の钦</div>
+                            <div class="s_text">关注时间:2016.05.10</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells no_t">
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <img src="../assets/images/uimg.jpg" alt="" class="list_uimg" />
+                        </div>
+                        <div class="weui-cell__bd">
+                            <div class="m_title">金睛の钦</div>
+                            <div class="s_text">关注时间:2016.05.10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        
+        
+
+    </div>
+
+  
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+	$(function(){
+        $(".js_check").on("click",".team_left_li",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    })
+	
+</script>
+
+</body>
+</html>

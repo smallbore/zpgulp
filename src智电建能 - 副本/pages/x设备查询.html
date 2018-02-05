@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 智电建能 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-bd sbcx" id="container">
+        <!-- 页面内容-->
+        <div class="weui-cell search-box js_open-popup">
+            <div class="weui-cell__hd"><img class="icon_search" src="../assets/images/sbcx_icon_search.png" alt="">
+            </div>
+            <div class="weui-cell__bd">
+                <div class="weui-input" style="color: #bbb;">输入目的充电桩所在位置</div>
+            </div>
+            <div class="weui-cell__ft">
+                <span class="search_btn bor-1px-l" >搜索</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="searchPop" class="weui-popup__container">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal" style="background-color: rgba(255,255,255,0);">
+        <div class="weui-panel pop-search-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><img class="icon_search" src="../assets/images/sbcx_icon_search.png" alt="">
+                </div>
+                <div class="weui-cell__bd"><input class="weui-input" id="search_input" placeholder="输入目的充电桩所在位置" type="text"></div>
+                <div class="weui-cell__ft js_search_btn">
+                    <span class="search_btn bor-1px-l" >搜索</span>
+                </div>
+            </div>
+            <div class="weui-panel__bd  bor-1px-t">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="fs28">天河东站充电桩</div>
+                        <div class="fs22 text-muted">广东省广州市天河区东站路1号</div>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="fs28">天河客运站充电桩</div>
+                        <div class="fs22 text-muted">广东省广州市白云区机场路23号</div>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="fs28">天河北路充电桩</div>
+                        <div class="fs22 text-muted">广东省广州市天河区天河路223号</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="searchResPop" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__modal" style="background-color: rgba(255,255,255,0);">
+        <div class="pop-search-result">
+            <div class="popres_hd">
+                <div class="sbcx_resbg">
+                    <div class="avatar">
+                        <img src="../assets/images/tx2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="weui-cells border-none">
+                    <div class="weui-cell flex-center">
+                        <div class="weui-cell__bd">
+                            <div class="fs30 fwbold">广州天河北充电桩</div>
+                            <div class="fs26"><span>直流单枪桩</span> <span class="text-blue">低频率设备3个</span></div>
+                        </div>
+                        <div class="weui-cell__ft0">
+                            <a href="#"><img class="sbcx_icon_dh" src="../assets/images/sbcx_icon_dh.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popres_bd bor-1px-t">
+                <div class="weui-cell active">
+                    <div class="weui-cell__hd">青岛特来电新能源有限公司</div>
+                    <div class="weui-cell__bd">巡检记录</div>
+                    <div class="weui-cell__ft0">5</div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">桩运营编码：TLD-asd-01</div>
+                    <div class="weui-cell__bd">维修记录</div>
+                    <div class="weui-cell__ft0">4</div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">桩运营编码：TLD-asd-02</div>
+                    <div class="weui-cell__bd">维修记录</div>
+                    <div class="weui-cell__ft0">2</div>
+                </div>
+                
+                <div class="weui-btn-area">
+                    <a href="x设备.html" class="weui-btn weui-btn_primary">详情</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@@include('./include/footer.html')
+
+<script>
+    $(function () {
+        $(".js_search_btn").on('click', function () {
+            $("#searchResPop").popup();
+        });
+        $(".js_open-popup").on('click', function () {
+           $("#searchPop").popup();
+            $("#search_input").focus();
+        });
+
+    });
+</script>
+<script src="//webapi.amap.com/maps?v=1.3&key=b65f7ba655e25ed2300f273950fe20bd"></script>
+<script type="text/javascript">
+    var provinces = [{
+        "name": "吉林省",
+        "center": "125.3245,43.886841",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "黑龙江省",
+        "center": "126.642464,45.756967",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "上海市",
+        "center": "121.472644,31.231706",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "江苏省",
+        "center": "118.767413,32.041544",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "广东省",
+        "center": "113.280637,23.125178",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "广西壮族自治区",
+        "center": "108.320004,22.82402",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "海南省",
+        "center": "110.33119,20.031971",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "重庆市",
+        "center": "106.504962,29.533155",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "贵州省",
+        "center": "106.713478,26.578343",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "云南省",
+        "center": "102.712251,25.040609",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "青海省",
+        "center": "101.778916,36.623178",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "宁夏回族自治区",
+        "center": "106.278179,38.46637",
+        "type": 1,
+        "subDistricts": []
+    }, {
+        "name": "澳門特別行政區",
+        "center": "113.54909,22.198951",
+        "type": 1,
+        "subDistricts": []
+    }];
+    var map = new AMap.Map('container', {resizeEnable: true, zoom: 4});
+    var markers = [];
+    //province见Demo引用的JS文件
+    for (var i = 0; i < provinces.length; i += 1) {
+        var marker;
+        if (provinces[i].type === 1) {
+            var icon = new AMap.Icon({
+                image: '../assets/images/sbcx_icon_mark.png',
+                size: new AMap.Size(20, 25)
+            });
+            marker = new AMap.Marker({
+                icon: icon,
+                position: provinces[i].center.split(','),
+                offset: new AMap.Pixel(-12, -12),
+                zIndex: 101,
+                title: provinces[i].name,
+                map: map
+            });
+        }
+        markers.push(marker);
+    }
+    map.setFitView();
+</script>
+</body>
+</html>

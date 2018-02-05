@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 维修处理 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "维修处理",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells mant_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="my_title">维修处理</div>
+                </div>
+            </div>
+            <div class="weui-cell no_t">
+                 <div class="weui-cell__bd">
+                    <div class="fwbold">故障处理</div>
+                    <div class="small_textarea">
+                        <textarea class="weui-textarea" placeholder="">马达短路烧掉了</textarea>
+                    </div>    
+                 </div>
+            </div>
+            <div class="weui-cell no_t">
+                <div class="weui-cell__bd">
+                    <div class="fwbold">更换配件</div>
+                    <div class="small_textarea">
+                        <textarea class="weui-textarea" placeholder="">需要更换马达</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-cells">
+            <div class="weui-cell no_t">
+                <div class="weui-cell__bd">
+                    <div class="fwbold">维修金额</div>
+                    <div class="input_money">
+                        <span>￥</span><input class="weui-input" type="text" placeholder="请输入金额" value="1000"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page-foot_btn">
+        <a href="g确认完工.html" class="foot_btn">确定</a>
+    </div>
+  
+</div>
+
+@@include('./include/footer.html')
+</body>
+</html>

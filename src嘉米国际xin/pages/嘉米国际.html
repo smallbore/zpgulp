@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	@@include('./include/header.html')
+	<link href="../assets/js/Swiper-4.0.7/swiper.min.css" rel="stylesheet">
+    <title> 购买身份 </title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "购买身份",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+		<!-- 页面内容-->
+		<div class="swiper_box">
+			<div class="swiper-container" id="swipor1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="../assets/images/banner0.jpg" alt="" class="swimg">
+					</div>
+					<div class="swiper-slide">
+						<img src="../assets/images/banner0.jpg" alt="" class="swimg">
+					</div>
+					<div class="swiper-slide">
+						<img src="../assets/images/banner0.jpg" alt="" class="swimg">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+
+		<div class="check_box">
+			<div class="weui-cells weui-cells_checkbox">
+				<label class="weui-cell weui-check__label">
+					<div class="weui-cell__hd">
+						<div class="por_img">
+							<img src="../assets/images/sm_icon1.png" alt="" />
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<div class="popup_tbox">
+							<div class="popup_text">董事长</div>
+						</div>
+					</div>
+					<div class="weui-cell__cd">
+						<input type="radio" class="weui-check" name="radio1" >
+						<i class="weui-icon-checked"></i>
+					</div>
+				</label>
+			</div>
+			<div class="weui-cells weui-cells_checkbox">
+				<label class="weui-cell weui-check__label">
+					<div class="weui-cell__hd">
+						<div class="por_img">
+							<img src="../assets/images/sm_icon2.png" alt="" />
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<div class="popup_tbox">
+							<div class="popup_text">总代</div>
+						</div>
+					</div>
+					<div class="weui-cell__cd">
+						<input type="radio" class="weui-check" name="radio1"  checked="checked">
+						<i class="weui-icon-checked"></i>
+					</div>
+				</label>
+			</div>
+			<div class="weui-cells weui-cells_checkbox">
+				<label class="weui-cell weui-check__label">
+					<div class="weui-cell__hd">
+						<div class="por_img">
+							<img src="../assets/images/sm_icon3.png" alt="" />
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<div class="popup_tbox">
+							<div class="popup_text">分销</div>
+						</div>
+					</div>
+					<div class="weui-cell__cd">
+						<input type="radio" class="weui-check" name="radio1" >
+						<i class="weui-icon-checked"></i>
+					</div>
+				</label>
+			</div>
+			<div class="weui-cells weui-cells_checkbox">
+				<label class="weui-cell weui-check__label">
+					<div class="weui-cell__hd">
+						<div class="por_img">
+							<img src="../assets/images/sm_icon4.png" alt="" />
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<div class="popup_tbox">
+							<div class="popup_text">城市特约</div>
+						</div>
+					</div>
+					<div class="weui-cell__cd">
+						<input type="radio" class="weui-check" name="radio1">
+						<i class="weui-icon-checked"></i>
+					</div>
+				</label>
+			</div>
+			<div class="weui-cells weui-cells_checkbox">
+				<label class="weui-cell weui-check__label">
+					<div class="weui-cell__hd">
+						<div class="por_img">
+							<img src="../assets/images/sm_icon5.png" alt="" />
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<div class="popup_tbox">
+							<div class="popup_text">城市合伙人</div>
+						</div>
+					</div>
+					<div class="weui-cell__cd">
+						<input type="radio" class="weui-check" name="radio1">
+						<i class="weui-icon-checked"></i>
+					</div>
+				</label>
+			</div>
+			<div class="weui-cells weui-cells_checkbox">
+				<label class="weui-cell weui-check__label">
+					<div class="weui-cell__hd">
+						<div class="por_img">
+							<img src="../assets/images/sm_icon6.png" alt="" />
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<div class="popup_tbox">
+							<div class="popup_text">代理</div>
+						</div>
+					</div>
+					<div class="weui-cell__cd">
+						<input type="radio" class="weui-check" name="radio1">
+						<i class="weui-icon-checked"></i>
+					</div>
+				</label>
+			</div>
+			
+		</div>
+
+		<div class="small_btn">
+			<a href="javascript:;" class="weui-btn open-popup" data-target="#pingpup">查看商品列表</a>
+		</div>
+
+		<div class="por_xuan">
+			<div class="por_top">
+				<div class="por_title">已选商品</div>
+			</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="por_img">
+							<img src="../assets/images/por01.jpg" alt="" />
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<div class="por_text_box">
+							<div class="por_text">雅诗兰黛EsteeLauder“小棕瓶眼霜” 肌透修护眼部精 华霜 15ml</div>
+						</div>
+						<div class="weui-flex">
+							<div class="weui-flex__hd">编号：01</div>
+							<div class="weui-flex__item">数量：2</div>
+							<div class="weui_flex__ft tcolbk">￥250.00</div>
+						</div>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<div class="por_img">
+							<img src="../assets/images/por01.jpg" alt="" />
+						</div>
+					</div>
+					<div class="weui-cell__bd">
+						<div class="por_text_box">
+							<div class="por_text">雅诗兰黛EsteeLauder“小棕瓶眼霜” 肌透修护眼部精 华霜 15ml</div>
+						</div>
+						<div class="weui-flex">
+							<div class="weui-flex__hd">编号：01</div>
+							<div class="weui-flex__item">数量：2</div>
+							<div class="weui_flex__ft tcolbk">￥250.00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd"></div>
+					<div class="weui-cell__ft">
+						 共计：<span class="colz fbold">￥500.00</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="por_xuan">
+			<div class="por_top">
+				<div class="por_title">收货信息</div>
+			</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<img src="../assets/images/sq_icon1.png" alt="" class="inp_img" />
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" placeholder="收货人姓名" />
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<img src="../assets/images/sq_icon2.png" alt="" class="inp_img" />
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" placeholder="联系方式" />
+					</div>
+				</div>
+				<div class="weui-cell weui-cell_access">
+					<div class="weui-cell__hd">
+						<img src="../assets/images/sq_icon3.png" alt="" class="inp_img" />
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" placeholder="选择省市区" />
+					</div>
+					<div class="weui-cell__ft"></div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<img src="../assets/images/sq_icon3.png" alt="" class="inp_img" />
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" placeholder="收货地址" />
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">备注</div>
+				</div>
+				<div class="weui-cell no_t" style="padding-top:0;">
+					<div class="weui-cell__bd">
+						<textarea class="weui-textarea" placeholder="请输入您需要备注的内容"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tj-btn">
+			<a href="javascript:;" class="weui-btn">提交</a>
+		</div>
+        
+
+    </div>
+
+  
+</div>
+<!--列表 -->
+<div id="pingpup" class="weui-popup__container popup-bottom">
+	<div class="weui-popup__overlay"></div>
+	<div class="weui-popup__modal pingpup_modal">
+
+		<div class="close_btn close-popup">
+			<img src="../assets/images/closex.png">
+		</div>
+
+		<div class="weui-tab">
+			<div class="weui-navbar">
+				<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+					已添加 
+				</a>
+				<a class="weui-navbar__item" href="#tab2">
+					未添加
+				</a>
+			</div>
+			<div class="weui-tab__bd">
+				<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+					
+					<div class="weui-cells weui-cells_checkbox">
+						<div class="weui-cell weui-cell_swiped">
+							<div class="weui-cell__bd">
+								<div class="weui-cell weui-check__label">
+									<div class="weui-cell__hd">
+										<div class="por_img">
+											<img src="../assets/images/por01.jpg" alt="" />
+										</div>
+									</div>
+									<div class="weui-cell__bd">
+										<div class="popup_tbox">
+											<div class="popup_text">玉兰油OLAY 新生塑颜金纯弹力眼霜 15ml 淡纹紧致 眼霜</div>
+										</div>
+										<div class="weui-flex">
+											<div class="weui-flex__item">￥250.00</div>
+											<div class="weui-flex__ft">
+												<div class="count">
+													<a class="count_btn count_minus limit"></a>
+													<input class="count_number" type="number" value="1">
+													<a class="count_btn count_plus"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-cell__ft small_color">
+								<a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a>
+							</div>
+						</div>
+
+						<div class="weui-cell weui-cell_swiped">
+							<div class="weui-cell__bd">
+								<div class="weui-cell weui-check__label">
+									<div class="weui-cell__hd">
+										<div class="por_img">
+											<img src="../assets/images/por01.jpg" alt="" />
+										</div>
+									</div>
+									<div class="weui-cell__bd">
+										<div class="popup_tbox">
+											<div class="popup_text">玉兰油OLAY 新生塑颜金纯弹力眼霜 15ml 淡纹紧致 眼霜</div>
+										</div>
+										<div class="weui-flex">
+											<div class="weui-flex__item">￥250.00</div>
+											<div class="weui-flex__ft">
+												<div class="count">
+													<a class="count_btn count_minus limit"></a>
+													<input class="count_number" type="number" value="1">
+													<a class="count_btn count_plus"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-cell__ft small_color">
+								<a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div id="tab2" class="weui-tab__bd-item">
+					<div class="weui-cells weui-cells_checkbox">
+						<div class="weui-cell weui-check__label">
+							<label class="weui-cell__cd">
+								<input type="checkbox" class="weui-check" name="checkbox1" id="s11">
+								<i class="weui-icon-checked"></i>
+							</label>
+							<div class="weui-cell__hd">
+								<div class="por_img">
+									<img src="../assets/images/por01.jpg" alt="" />
+								</div>
+							</div>
+							<div class="weui-cell__bd">
+								<div class="popup_tbox">
+									<div class="popup_text">玉兰油OLAY 新生塑颜金纯弹力眼霜 15ml 淡纹紧致 眼霜</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">￥250.00</div>
+									<div class="weui-flex__ft">
+										<div class="count">
+											<a class="count_btn count_minus limit"></a>
+											<input class="count_number" type="number" value="1">
+											<a class="count_btn count_plus"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="weui-cell weui-check__label">
+							<label class="weui-cell__cd">
+								<input type="checkbox" class="weui-check" name="checkbox1" id="s12">
+								<i class="weui-icon-checked"></i>
+							</label>
+							<div class="weui-cell__hd">
+								<div class="por_img">
+									<img src="../assets/images/por01.jpg" alt="" />
+								</div>
+							</div>
+							<div class="weui-cell__bd">
+								<div class="popup_tbox">
+									<div class="popup_text">玉兰油OLAY 新生塑颜金纯弹力眼霜 15ml 淡纹紧致 眼霜</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">￥250.00</div>
+									<div class="weui-flex__ft">
+										<div class="count">
+											<a class="count_btn count_minus limit"></a>
+											<input class="count_number" type="number" value="1">
+											<a class="count_btn count_plus"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="weui-cell weui-check__label">
+							<label class="weui-cell__cd">
+								<input type="checkbox" class="weui-check" name="checkbox1" id="s12">
+								<i class="weui-icon-checked"></i>
+							</label>
+							<div class="weui-cell__hd">
+								<div class="por_img">
+									<img src="../assets/images/por01.jpg" alt="" />
+								</div>
+							</div>
+							<div class="weui-cell__bd">
+								<div class="popup_tbox">
+									<div class="popup_text">玉兰油OLAY 新生塑颜金纯弹力眼霜 15ml 淡纹紧致 眼霜</div>
+								</div>
+								<div class="weui-flex">
+									<div class="weui-flex__item">￥250.00</div>
+									<div class="weui-flex__ft">
+										<div class="count">
+											<a class="count_btn count_minus limit"></a>
+											<input class="count_number" type="number" value="1">
+											<a class="count_btn count_plus"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tj-btn" style="padding-bottom:0;">
+			<a href="javascript:;" class="weui-btn">确定</a>
+		</div>
+	</div>
+</div>
+
+@@include('./include/footer.html')
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+	var mySwiper1 = new Swiper('#swipor1', {
+		autoplay: {
+			delay: 3000,
+			stopOnLastSlide: false,
+			disableOnInteraction: true,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
+		loop: true,
+	})
+
+	$(function(){
+		$(".small_grids").on("click",".weui-grid",function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+	})
+	
+</script>
+
+</body>
+</html>

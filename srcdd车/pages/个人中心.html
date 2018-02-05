@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 个人中心 </title>
+    <style>
+.weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {color: #ff8901;} 
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "个人中心",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd" style="background:#282f35;">
+        <!-- 页面内容-->
+        <div class="mycen_cells">
+            <div class="mycen_img">
+                <img src="../assets/images/tx2.png" alt="" >
+            </div>
+            <div class="mycen_name">汤姆鲁斯</div>
+        </div>
+
+        <div class="weui-cells no_all mycen_link">
+            <a class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/drawer_icon_01.png" class="link_icon">
+                </div>
+                <div class="weui-cell__bd">注册司机</div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/drawer_icon_02.png" class="link_icon">
+                </div>
+                <div class="weui-cell__bd">消息中心</div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/drawer_icon_04.png" class="link_icon">
+                </div>
+                <div class="weui-cell__bd">我的钱包</div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/drawer_icon_20.png" class="link_icon">
+                </div>
+                <div class="weui-cell__bd">汽车服务</div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/drawer_icon_21.png" class="link_icon">
+                </div>
+                <div class="weui-cell__bd">积分商城</div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/drawer_icon_22.png" class="link_icon">
+                </div>
+                <div class="weui-cell__bd">关于我们</div>
+                <div class="weui-cell__ft"></div>
+            </a>
+        </div>
+        
+
+    </div>
+
+    <div class="foot-tell">
+        <img src="../assets/images/foot-tell.png" alt="" />
+        <span>客服电话 400-6789-0877</span>
+    </div>
+
+  
+</div>
+
+@@include('./include/footer.html')
+</body>
+</html>

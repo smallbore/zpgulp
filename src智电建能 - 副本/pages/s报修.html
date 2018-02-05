@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 报修 </title>
+    <style>
+        .small_textarea{
+            position:relative;
+        }
+        .small_textarea::after{
+            content: " ";
+            display: inline-block;
+            height: 6px;
+            width: 6px;
+            border-width: 1px 1px 0 0;
+            border-color: #c8c8cd;
+            border-style: solid;
+            -webkit-transform: matrix(.71,.71,-.71,.71,0,0);
+            transform: matrix(.71,.71,-.71,.71,0,0);
+            position: absolute;
+            top: 50%;
+            margin-top: -4px;
+            right: 6px;
+        }
+        .rgmore::after{
+            right:30px
+        }
+        .no_b::after{display:none;}
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "报修",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells mant_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="my_title">报修</div>
+                </div>
+            </div>
+            
+            <div class="weui-panel weui-panel_access small_panel no_all no_mg box_shadow">
+                
+                <div class="weui-panel__bd">
+                    <div class="weui-media-box weui-media-box_appmsg ">
+                        <div class="weui-media-box__bd">
+                            <h4 class="weui-media-box__title">
+                                <div class="div_tip"><span class="fs28">直流单枪桩</span> <span class="yan_btn blue_btn span-tip">特斯拉</span></div>
+                                <div class="gray90 fs24" style="font-weight:500;padding:4px 0;">型号：KFR-26GW/(265371)FN</div>
+                            </h4>
+                            <p class="weui-media-box__desc">
+                                <span class="gray90">查询编码：2016010703891268</span>
+                            </p>
+                        </div>
+                        <div class="weui-media-box__hd">
+                            <img class="weui-media-box__thumb" src="../assets/images/pro01.jpg" />
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="weui-cells small_panel">
+            <div class="weui-cell no_t">
+                <div class="weui-cell__bd">
+                    <div class="fwbold">服务类型</div>
+                   <div class="weui-grids bao-grids js_check">
+                        <div class="weui-grid active">
+                            <div class="grid_lei">
+                                <img src="../assets/images/bao01.png" class="oneshow" />
+                                <img src="../assets/images/bao011.png" class="twoshow" />
+                                <p class="bao_text">报装</p>
+                            </div>
+                        </div>
+                        <div class="weui-grid">
+                            <div class="grid_lei">
+                                <img src="../assets/images/bao02.png" class="oneshow" />
+                                <img src="../assets/images/bao022.png" class="twoshow" />
+                                <p class="bao_text">报修</p>
+                            </div>
+                        </div>
+                        <div class="weui-grid">
+                            <div class="grid_lei">
+                                <img src="../assets/images/bao03.png" class="oneshow" />
+                                <img src="../assets/images/bao033.png" class="twoshow" />
+                                <p class="bao_text">移机</p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-cells small_panel">
+            <div class="weui-cell no_t">
+                <div class="weui-cell__bd">
+                    <div class="fwbold">联系人</div>
+                    <div class="small_textarea rgmore">
+                        <div class="fwbold">林先生 13828412262</div>
+                        <div class="gray90 fs24" style="padding:4px 0;">广东省 广州市 天河区</div>
+                        <div class="gray90 fs24">棠下街道御富科贸园C栋3楼</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-cells small_panel">
+            <div class="weui-cell no_t">
+                <div class="weui-cell__bd">
+                    <div class="fwbold">报装信息</div>
+                    <div class="small_textarea">
+                        <div class="weui-flex">
+                            <div class="weui-flex__item"><div class="gray90 fs26">上门时间</div></div>
+                            <div class="fs28 tcolbk">2017-12-18</div>
+                        </div>
+                    </div>
+                    <div class="small_textarea no_b">
+                        <textarea class="weui-textarea bao_textarea" placeholder="故障描述"></textarea>
+                    </div>
+                    <div class="textarea_tip js_check">
+                        <span class="textarea_tip_span active">漏水</span>
+                        <span class="textarea_tip_span">无法开机</span>
+                        <span class="textarea_tip_span">噪音大</span>
+                        <span class="textarea_tip_span">漏电</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells small_panel">
+            <div class="weui-cell no_t">
+                <div class="weui-cell__bd">
+                    <div class="fwbold">报修图片</div>
+                    <div class="weui-uploader small_uploader">
+                        <div class="weui-uploader__bd">
+                            <ul class="weui-uploader__files" id="uploaderFiles">
+                                <li class="weui-uploader__file" style="background-image:url(../assets/images/pro03.jpg)">
+                                    <span class="weui-badge small_badge">×</span>
+                                </li>
+                                <!-- <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(../assets/images/pro03.jpg)">
+                                    <div class="weui-uploader__file-content">50%</div>
+                                </li> -->
+                            </ul>
+                            <div class="weui-uploader__input-box">
+                                <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="page-foot_btn">
+        <a href="#" class="foot_btn">提交报告</a>
+    </div>
+  
+  
+</div>
+
+@@include('./include/footer.html')
+
+<script>
+    $(function(){
+        $(".js_check").on("click",".weui-grid",".textarea_tip_span",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+        $(".js_check").on("click",".textarea_tip_span", function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    })
+</script>
+</body>
+</html>

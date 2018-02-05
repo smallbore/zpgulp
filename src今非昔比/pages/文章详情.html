@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>文章详情 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "文章详情"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells art_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd s_title">
+                    <div class="fs36">小米联合创始人王川：小米电视全面降价低价也能赚钱</div>
+                    <div class="m_text">2017-08-30 <div class="fr open-popup" data-target="#fenxiang">分享</div></div>
+                    <div class="art_porimg"><img src="../assets/images/pro03.jpg" alt="" /></div>
+                    <p class="x_title">正品科技讯 8月29日，小米联合创始人、副总裁、小米电视负责人王川发布了一篇题为《小米电视为什么率先降价？》的文章，王川说，今年下半年，我们发现上游原材料价格出现回落的苗头，我们的第一反应就是，把实惠还给用户，成为第一家全面下调价格的电视品牌。</p>
+                    <p class="x_title">据悉，本次降价的品类包括小米电视4A从43英寸到65英寸全面调整价格，最高降幅达到1000元。</p>
+                    <p class="x_title">王川说，今年上半年，整个电视行业的大盘在下滑，过去强势的电视企业也都遇到了各种问题，小米电视却捷报频传，逆势取得了高速增长。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 分享 -->
+<div id="fenxiang" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal fenx_box">
+        <div class="weui-cells fenx-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="m_text">分享到</div>
+                    <div class="weui-grids no_all">
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon2.jpg" alt="" class="fx_img" />
+                            <div class="s_title">微信</div>
+                        </div>
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon3.jpg" alt="" class="fx_img" />
+                            <div class="s_title">朋友圈</div>
+                        </div>
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon4.jpg" alt="" class="fx_img" />
+                            <div class="s_title">QQ好友</div>
+                        </div>
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon1.jpg" alt="" class="fx_img" />
+                            <div class="s_title">QQ空间</div>
+                        </div>
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon5.jpg" alt="" class="fx_img" />
+                            <div class="s_title">新浪微博</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="small_btn">
+            <a href="javascript:;" class="weui-btn weui-btn_default close-popup">取消</a>
+        </div>
+    </div>
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function () {
+       
+    })
+</script>
+
+</body>
+</html>

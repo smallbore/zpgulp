@@ -1,0 +1,48 @@
+.weui-tabbar__item {
+  position: relative;
+
+  &.weui-bar__item--on .weui-tabbar__label {
+    color: @color-primary;
+  }
+}
+.weui-navbar__item {
+  position: relative;
+  color: #292828;
+
+  &.weui-bar__item--on {
+    color: #ff5a76;
+    background-color: #fff;
+    &:after{
+      height: 2px;
+      background-color: #ff5a76;
+      content: "";
+      position: absolute;
+      width: 30px;
+      bottom: 0;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      border-radius: 1px;
+      box-shadow: 0px 2px 5px 0px
+      rgba(255, 104, 132, 0.5);
+    }
+  }
+}
+
+.weui-tab__bd {
+  box-sizing: border-box;
+  height: 100%;
+  .weui-tab__bd-item {
+    display: none;
+    height: 100%;
+    overflow: auto;
+
+    &.weui-tab__bd-item--active {
+      display: block;
+    }
+  }
+}
+
+.weui-navbar + .weui-tab__bd {
+  padding-top: 50px;
+}

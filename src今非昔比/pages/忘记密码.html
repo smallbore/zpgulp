@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 忘记密码 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "忘记密码"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        
+        <div class="weui-cells no_all ">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="您的手机号">
+                </div>
+            </div>
+            <div class="weui-cell pd20">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入手机验证码">
+                </div>
+                <div class="weui-cell__ft">
+                    <a href="#" class="getcode">获取验证码</a>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入6-16位数字、字母或符号">
+                </div>
+            </div>
+            
+        </div>
+        <div class="weui-cells weui-cells_radio small_radio">
+            <label class="weui-cell weui-check__label" for="x11">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check" name="radio1" id="x11">
+                    <span class="weui-icon-checked"></span>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="g_text">已阅读并同意<a href="#">《借款额度合同及相关授权》</a></div>
+                </div>
+            </label>
+        </div>
+        <div class="small_btn">
+            <a href="javascript:;" class="weui-btn weui-btn_primary open-popup" data-target="#zc_box">提交</a>
+        </div>
+    </div>
+
+</div>
+<div id="zc_box" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal zc_modal">
+        <div class="weui-msg">
+            <div class="weui-msg__icon-area">
+                <i class="weui-icon-success weui-icon_msg"></i>
+            </div>
+            <div class="weui-msg__text-area">
+                <h2 class="weui-msg__title"><span class="fs28">修改成功</span></h2>
+                <p class="weui-msg__desc">
+                    <span class="g_text">立即登录可以享受超多礼品相送哦！</span>
+                 </p>
+            </div>
+            <div class="weui-msg__opr-area">
+                <p class="weui-btn-area">
+                    <a href="javascript:;" class="weui-btn weui-btn_primary">去登录体验吧</a>
+                </p>
+            </div>
+           
+        </div>
+       
+    </div>
+</div>
+
+@@include('./include/footer.html')
+
+<script>
+    $(function(){
+      
+    })
+</script>
+</body>
+</html>

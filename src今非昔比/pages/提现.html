@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 提现 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "提现"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        
+        <div class="tix_cells">
+            <!-- <a class="txli_link" href="提现记录.html">提现记录</a> -->
+            <div class="m_title">提现金额 <span class="fs34">20.00</span><span class="fs24">元</span></div>
+            <div class="tix_input">
+                <span>￥</span>
+                <input class="weui-input" type="text" placeholder="" value="5000.00" />
+            </div>
+            <div class="tix_tip">提现到微信钱包，<span class="colbl">全部提现</span></div>
+        </div>
+        <div class="small_btn">
+            <a href="javascript:;" class="weui-btn weui-btn_primary">提现</a>
+            <div class="btn_tip">1-5个工作日到账</div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function () {
+       
+    })
+</script>
+</body>
+</html>

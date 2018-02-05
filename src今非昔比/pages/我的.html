@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 我的 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "我的"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells no_all my_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/tx0.jpg" alt="" class="user_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="fs28">刘晓明</div>
+                    <div class="my_tell"><img src="../assets/images/my_icon9.png" alt=""/> <span>18705462356</span></div>
+                    <a href="完善资料.html" class="colwhite">点击完善资料 >></a>
+                </div>
+                <div class="weui-cell__ft">
+                    <img src="../assets/images/my_icon8.png" alt="" class="user_icon" />
+                    <div class="colwhite tc">0.00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-cells no_all ding_cells">
+            <a class="weui-cell weui-cell_access" href="订单列表.html">
+                <div class="weui-cell__bd"><span class="m_title">我的订单</span></div>
+                <div class="weui-cell__ft"><span class="s_text">更多</span></div>
+            </a>
+            <div class="weui-grids">
+                <a class="weui-grid" href="订单列表.html">
+                    <img class="my_icon" src="../assets/images/my_item1.png" alt="" />
+                    <div class="s_title">全部订单</div>
+                </a>
+                <a class="weui-grid" href="订单列表.html">
+                    <img class="my_icon" src="../assets/images/my_item2.png" alt="" />
+                    <div class="s_title">已支付</div>
+                </a>
+                <a class="weui-grid" href="订单列表.html">
+                    <img class="my_icon" src="../assets/images/my_item3.png" alt="" />
+                    <div class="s_title">已完成</div>
+                </a>                
+            </div>
+        </div>
+
+        <div class="weui-grids my_grids">
+            <a class="weui-grid" href="我要代言.html">
+                <img class="my_icon" src="../assets/images/my_item4.png" alt="" />
+                <div class="s_title">我要代言</div>
+            </a>
+            <a class="weui-grid" href="团队统计.html">
+                <img class="my_icon" src="../assets/images/my_item5.png" alt="" />
+                <div class="s_title">我的团队</div>
+            </a>
+            <a class="weui-grid" href="佣金明细.html">
+                <img class="my_icon" src="../assets/images/my_item6.png" alt="" />
+                <div class="s_title">佣金明细</div>
+            </a>
+            <a class="weui-grid" href="提现.html">
+                <img class="my_icon" src="../assets/images/my_item7.png" alt="" />
+                <div class="s_title">我的提现</div>
+            </a>
+            <a class="weui-grid" href="购物车.html">
+                <img class="my_icon" src="../assets/images/my_item8.png" alt="" />
+                <div class="s_title">购物车</div>
+            </a>
+            <a class="weui-grid" href="检测订单报告.html">
+                <img class="my_icon" src="../assets/images/my_item9.png" alt="" />
+                <div class="s_title">我的报告</div>
+            </a>
+        </div>
+        
+        
+    </div>
+
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function(){
+      
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 订单列表 </title>
+    <style>
+.weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {color: #ff8901;} 
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "订单列表",
+        "menu": ""
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="dings_box">
+			<div class="weui-cells no_all dings_box_top">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<div class="ding_title">订单号 201713820578898</div>
+					</div>
+					<div class="weui-cell__ft">
+						<div class="coly fs-24">未完成</div>
+					</div>
+				</div>
+			</div>
+			<div class="dings_box_bg1">
+				<img src="../assets/images/box_fen01.png" alt="" style="display:block;" />
+			</div>
+			<div class="weui-tab">
+				<div class="weui-navbar">
+					<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+			      		乘客一
+			    	</a>
+				    <a class="weui-navbar__item" href="#tab2">
+				    	乘客二
+				    </a>
+				    <a class="weui-navbar__item" href="#tab3">
+				    	乘客三
+				    </a>
+				</div>
+				<div class="weui-tab__bd">
+				    <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+				    	<div class="weui-cells pen_cells">
+					    	<div class="weui-cell">
+					    		<div class="weui-cell__hd">
+					    			<img src="../assets/images/tx2.png" alt="" class="dings_img" />
+					    		</div>
+					    		<div class="weui-cell__bd">
+					    			<div class="fs28">莱安那多1</div>
+					    			<div class="dings_tip">金额￥12 <span class="tip_default">未支付</span></div>
+					    		</div>
+					    		<div class="weui-cell__ft">
+					    			<div class="tell_btns">
+					    				<img src="../assets/images/icon_call3.png" alt="" />
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+				    </div>
+				    <div id="tab2" class="weui-tab__bd-item ">
+				    	<div class="weui-cells pen_cells">
+					    	<div class="weui-cell">
+					    		<div class="weui-cell__hd">
+					    			<img src="../assets/images/tx2.png" alt="" class="dings_img" />
+					    		</div>
+					    		<div class="weui-cell__bd">
+					    			<div class="fs28">莱安那多2</div>
+					    			<div class="dings_tip">金额￥12 <span class="tip_default">未支付</span></div>
+					    		</div>
+					    		<div class="weui-cell__ft">
+					    			<div class="tell_btns">
+					    				<img src="../assets/images/icon_call3.png" alt="" />
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+				    </div>
+				    <div id="tab3" class="weui-tab__bd-item ">
+				    	<div class="weui-cells pen_cells">
+					    	<div class="weui-cell">
+					    		<div class="weui-cell__hd">
+					    			<img src="../assets/images/tx2.png" alt="" class="dings_img" />
+					    		</div>
+					    		<div class="weui-cell__bd">
+					    			<div class="fs28">莱安那多3</div>
+					    			<div class="dings_tip">金额￥12 <span class="tip_default">未支付</span></div>
+					    		</div>
+					    		<div class="weui-cell__ft">
+					    			<div class="tell_btns">
+					    				<img src="../assets/images/icon_call3.png" alt="" />
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="weui-cells runing_cells">
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<img src="../assets/images/times.png" class="runing_img" alt="" />
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd"><div class="fs26">今天 13:55</div></div>
+		    	</div>
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<span class="runing_span bg_sbl"></span>
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd"><div class="fs26">珠江新城高德置地广场</div></div>
+		    	</div>
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<span class="runing_span bg_sred"></span>
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd"><div class="fs26">天河区正佳广场</div></div>
+		    	</div>
+		    </div>
+		    <div class="weui-cells no_all stat_cells">
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<!--<span class="runing_span bg_sbl"></span>-->
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd">
+		    			<div class="stat_tips">备注说明：要求车厢干净无异味</div>
+		    		</div>
+		    		<div class="weui-cell__ft">
+		    			<div class="stat_btns">开始行程</div>
+		    			<!--<div class="stat_btns">结束行程</div>-->
+		    		</div>
+		    	</div>
+		    </div>
+	    	<div class="dings_box_bg1">
+				<img src="../assets/images/box_fen01.png" alt="" style="display:block;" />
+			</div>
+			<div class="weui-cells no_all" style="padding-bottom:6px;">
+				<div class="weui-cell padd10">
+					<div class="weui-cell__bd tc fs24">
+						总计<b>￥</b><b class="fs36">32</b>
+					</div>
+				</div>
+			</div>
+        	<div class="dings_box_bg1">
+				<img src="../assets/images/box_fen02.png" alt="" style="display:block;" />
+			</div>
+        </div>
+        
+        <div class="dings_box">
+			<div class="weui-cells no_all dings_box_top">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<div class="ding_title">订单号 201713820578898</div>
+					</div>
+					<div class="weui-cell__ft">
+						<div class="coly fs-24 colhui">已完成</div>
+					</div>
+				</div>
+			</div>
+			<div class="dings_box_bg1">
+				<img src="../assets/images/box_fen01.png" alt="" style="display:block;" />
+			</div>
+			<div class="weui-tab">
+				<div class="weui-navbar">
+					<a class="weui-navbar__item weui-bar__item--on" href="#tab11">
+			      		乘客一
+			    	</a>
+				    <a class="weui-navbar__item" href="#tab22">
+				    	乘客二
+				    </a>
+				    <a class="weui-navbar__item" href="#tab33">
+				    	乘客三
+				    </a>
+				</div>
+				<div class="weui-tab__bd">
+				    <div id="tab11" class="weui-tab__bd-item weui-tab__bd-item--active">
+				    	<div class="weui-cells pen_cells">
+					    	<div class="weui-cell">
+					    		<div class="weui-cell__hd">
+					    			<img src="../assets/images/tx2.png" alt="" class="dings_img" />
+					    		</div>
+					    		<div class="weui-cell__bd">
+					    			<div class="fs28">莱安那多1</div>
+					    			<div class="dings_tip">金额￥12 <span class="tip_default tip_primary">已支付</span></div>
+					    		</div>
+					    		<div class="weui-cell__ft">
+					    			<div class="tell_btns">
+					    				<img src="../assets/images/icon_call3.png" alt="" />
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+				    </div>
+				    <div id="tab22" class="weui-tab__bd-item ">
+				    	<div class="weui-cells pen_cells">
+					    	<div class="weui-cell">
+					    		<div class="weui-cell__hd">
+					    			<img src="../assets/images/tx2.png" alt="" class="dings_img" />
+					    		</div>
+					    		<div class="weui-cell__bd">
+					    			<div class="fs28">莱安那多2</div>
+					    			<div class="dings_tip">金额￥12 <span class="tip_default tip_primary">已支付</span></div>
+					    		</div>
+					    		<div class="weui-cell__ft">
+					    			<div class="tell_btns">
+					    				<img src="../assets/images/icon_call3.png" alt="" />
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+				    </div>
+				    <div id="tab33" class="weui-tab__bd-item ">
+				    	<div class="weui-cells pen_cells">
+					    	<div class="weui-cell">
+					    		<div class="weui-cell__hd">
+					    			<img src="../assets/images/tx2.png" alt="" class="dings_img" />
+					    		</div>
+					    		<div class="weui-cell__bd">
+					    			<div class="fs28">莱安那多3</div>
+					    			<div class="dings_tip">金额￥12 <span class="tip_default tip_primary">已支付</span></div>
+					    		</div>
+					    		<div class="weui-cell__ft">
+					    			<div class="tell_btns">
+					    				<img src="../assets/images/icon_call3.png" alt="" />
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="weui-cells runing_cells">
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<img src="../assets/images/times.png" class="runing_img" alt="" />
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd"><div class="fs26">今天 13:55</div></div>
+		    	</div>
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<span class="runing_span bg_sbl"></span>
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd"><div class="fs26">珠江新城高德置地广场</div></div>
+		    	</div>
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<span class="runing_span bg_sred"></span>
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd"><div class="fs26">天河区正佳广场</div></div>
+		    	</div>
+		    </div>
+		    <div class="weui-cells no_all stat_cells">
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<!--<span class="runing_span bg_sbl"></span>-->
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd">
+		    			<div class="stat_tips">备注说明：要求车厢干净无异味</div>
+		    		</div>
+		    		<div class="weui-cell__ft">
+		    			<div class="stat_btns">立即评价</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    	<div class="dings_box_bg1">
+				<img src="../assets/images/box_fen01.png" alt="" style="display:block;" />
+			</div>
+			<div class="weui-cells no_all" style="padding-bottom:6px;">
+				<div class="weui-cell padd10">
+					<div class="weui-cell__bd tc fs24">
+						总计<b>￥</b><b class="fs36">32</b>
+					</div>
+				</div>
+			</div>
+        	<div class="dings_box_bg1">
+				<img src="../assets/images/box_fen02.png" alt="" style="display:block;" />
+			</div>
+        </div>
+        
+        <div class="dings_box">
+			<div class="weui-cells no_all dings_box_top">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<div class="ding_title">订单号 201713820578898</div>
+					</div>
+					<div class="weui-cell__ft">
+						<div class="coly fs-24 colhui">已完成</div>
+					</div>
+				</div>
+			</div>
+			<div class="dings_box_bg1">
+				<img src="../assets/images/box_fen01.png" alt="" style="display:block;" />
+			</div>
+			<div class="weui-tab">
+				<div class="weui-navbar">
+					<a class="weui-navbar__item weui-bar__item--on" href="#tab111">
+			      		乘客一
+			    	</a>
+				    <a class="weui-navbar__item" href="#tab222">
+				    	乘客二
+				    </a>
+				    <a class="weui-navbar__item" href="#tab333">
+				    	乘客三
+				    </a>
+				</div>
+				<div class="weui-tab__bd">
+				    <div id="tab111" class="weui-tab__bd-item weui-tab__bd-item--active">
+				    	<div class="weui-cells pen_cells">
+					    	<div class="weui-cell">
+					    		<div class="weui-cell__hd">
+					    			<img src="../assets/images/tx2.png" alt="" class="dings_img" />
+					    		</div>
+					    		<div class="weui-cell__bd">
+					    			<div class="fs28">莱安那多1</div>
+					    			<div class="dings_tip">金额￥12 <span class="tip_default tip_primary">已支付</span></div>
+					    		</div>
+					    		<div class="weui-cell__ft">
+					    			<div class="tell_btns">
+					    				<img src="../assets/images/icon_call3.png" alt="" />
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+				    </div>
+				    <div id="tab222" class="weui-tab__bd-item ">
+				    	<div class="weui-cells pen_cells">
+					    	<div class="weui-cell">
+					    		<div class="weui-cell__hd">
+					    			<img src="../assets/images/tx2.png" alt="" class="dings_img" />
+					    		</div>
+					    		<div class="weui-cell__bd">
+					    			<div class="fs28">莱安那多2</div>
+					    			<div class="dings_tip">金额￥12 <span class="tip_default tip_primary">已支付</span></div>
+					    		</div>
+					    		<div class="weui-cell__ft">
+					    			<div class="tell_btns">
+					    				<img src="../assets/images/icon_call3.png" alt="" />
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+				    </div>
+				    <div id="tab333" class="weui-tab__bd-item ">
+				    	<div class="weui-cells pen_cells">
+					    	<div class="weui-cell">
+					    		<div class="weui-cell__hd">
+					    			<img src="../assets/images/tx2.png" alt="" class="dings_img" />
+					    		</div>
+					    		<div class="weui-cell__bd">
+					    			<div class="fs28">莱安那多3</div>
+					    			<div class="dings_tip">金额￥12 <span class="tip_default tip_primary">已支付</span></div>
+					    		</div>
+					    		<div class="weui-cell__ft">
+					    			<div class="tell_btns">
+					    				<img src="../assets/images/icon_call3.png" alt="" />
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="weui-cells runing_cells">
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<img src="../assets/images/times.png" class="runing_img" alt="" />
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd"><div class="fs26">今天 13:55</div></div>
+		    	</div>
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<span class="runing_span bg_sbl"></span>
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd"><div class="fs26">珠江新城高德置地广场</div></div>
+		    	</div>
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<span class="runing_span bg_sred"></span>
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd"><div class="fs26">天河区正佳广场</div></div>
+		    	</div>
+		    </div>
+		    <div class="weui-cells no_all stat_cells">
+		    	<div class="weui-cell">
+		    		<div class="weui-cell__hd">
+		    			<div class="runing_icon">
+		    				<!--<span class="runing_span bg_sbl"></span>-->
+		    			</div>
+		    		</div>
+		    		<div class="weui-cell__bd">
+		    			<div class="stat_tips">备注说明：要求车厢干净无异味</div>
+		    		</div>
+		    		<div class="weui-cell__ft">
+		    			<div class="stat_btns stat_btn_del">已评价</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    	<div class="dings_box_bg1">
+				<img src="../assets/images/box_fen01.png" alt="" style="display:block;" />
+			</div>
+			<div class="weui-cells no_all" style="padding-bottom:6px;">
+				<div class="weui-cell padd10">
+					<div class="weui-cell__bd tc fs24">
+						总计<b>￥</b><b class="fs36">32</b>
+					</div>
+				</div>
+			</div>
+        	<div class="dings_box_bg1">
+				<img src="../assets/images/box_fen02.png" alt="" style="display:block;" />
+			</div>
+        </div>
+        
+
+
+    </div>
+
+  
+</div>
+
+@@include('./include/footer.html')
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>产品详情 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "产品详情"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="swiper_box">
+            <div class="swiper-container" id="swipor1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../assets/images/banner1.jpg" alt="" class="swimg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/banner1.jpg" alt="" class="swimg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/images/banner1.jpg" alt="" class="swimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="weui-cells mt0">
+            <div class="weui-cell no_cen pd20">
+                <div class="weui-cell__bd">
+                    <div class="m_title">
+                        乳腺基因检测
+                    </div>
+                    <div class="z_text">
+                        ￥388.00
+                    </div>
+                </div>
+                <div class="weui-cell__ft">已售出156</div>
+            </div>
+        </div>
+        <div class="weui-cells">
+            <div class="weui-cell pd20">
+                <div class="weui-cell__hd"><div class="title_icon"></div></div>
+                <div class="weui-cell__bd"><div class="m_title">产品详情</div></div>
+            </div>
+            <div class="weui-cell border-left_0">
+                <div class="weui-cell__bd">
+                    <div class="pros_list">
+                        <img src="../assets/images/pro01.jpg" alt="" />
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-tabbar xiang_tab">
+        <a class="fs28 m_title" href="#">加入购物车</a>
+        <a href="#" class="weui-btn weui-btn_primary open-popup" data-target="#buy_modal">立即购买</a>
+    </div>
+</div>
+<!-- 弹出 -->
+<div id="buy_modal" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
+        <div class="weui-cells no_all pro_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">
+                        乳腺基因检测
+                    </div>
+                    <div class="z_text">
+                        <span class="fs26">￥388.00</span>
+                    </div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="close_btn close-popup"><img src="../assets/images/my_icon7.png" alt="" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells no_all">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="s_title">购买数量</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="count">
+                        <a class="count_btn count_minus limit"></a>
+                        <input class="count_number" type="number" value="1">
+                        <a class="count_btn count_plus"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="weui-btn weui-btn_primary" style="margin-top:10px;">确定</a>
+    </div>
+</div>
+
+@@include('./include/footer.html')
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+    var mySwiper1 = new Swiper('#swipor1', {
+        // autoplay: {
+        //     delay: 3000,
+        //     stopOnLastSlide: false,
+        //     disableOnInteraction: true,
+        // },
+        loop: true,
+    })
+    
+</script>
+</body>
+</html>
