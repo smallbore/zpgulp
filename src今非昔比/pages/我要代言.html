@@ -3,6 +3,11 @@
 <head>
     @@include('./include/header.html')
     <title> 我要代言 </title>
+    <style>
+    .fenx-cells .weui-grids .weui-grid{
+        width:20%;
+    }
+    </style>
 </head>
 <body>
 <div class="page">
@@ -12,7 +17,7 @@
         })
     </div>
 
-    <div class="page-bd">
+    <div class="page-bd" style="background:#fff;">
         <!-- 页面内容-->
         <div class="user_menu">
             <div class="login_img">
@@ -24,14 +29,54 @@
         <div class="wx_box">
             <img src="../assets/images/app_icon2.png" alt="" />
         </div>
+        <div class="m_title tc">
+             我的邀请码：uk541211
+        </div>
         <div class="small_btn">
             <a href="javascript:;" class="weui-btn weui-btn_primary ">保存图片</a>
-            <a href="javascript:;" class="weui-btn weui-btn_default ">立即下载</a>
+            <a href="javascript:;" class="weui-btn weui-btn_default open-popup" data-target="#fenxiang">立即分享</a>
         </div>
     </div>
 
 </div>
-
+<!-- 分享 -->
+<div id="fenxiang" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal fenx_box">
+        <div class="weui-cells fenx-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="m_text">分享到</div>
+                    <div class="weui-grids no_all">
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon06.png" alt="" class="fx_img" />
+                            <div class="s_title">微信</div>
+                        </div>
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon07.png" alt="" class="fx_img" />
+                            <div class="s_title">朋友圈</div>
+                        </div>
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon08.png" alt="" class="fx_img" />
+                            <div class="s_title">QQ好友</div>
+                        </div>
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon09.png" alt="" class="fx_img" />
+                            <div class="s_title">QQ空间</div>
+                        </div>
+                        <div class="weui-grid no_all">
+                            <img src="../assets/images/f_icon10.png" alt="" class="fx_img" />
+                            <div class="s_title">分享图片</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="small_btn">
+            <a href="javascript:;" class="weui-btn weui-btn_default close-popup">取消</a>
+        </div>
+    </div>
+</div>
 
 @@include('./include/footer.html')
 

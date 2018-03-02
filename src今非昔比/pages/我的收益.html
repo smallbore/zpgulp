@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>我的收益 </title>
+    <style>
+        .weui-tab{
+            height: auto;
+        }
+        .weui-tab__bd-item .weui-cells{
+            margin-top:0;
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "我的收益"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="mx-tops">
+            <div class="mx-tops_box">
+                <div class="mx-tops_right">佣金说明 >></div>
+                <div class="mx-tops_img"><img src="../assets/images/tx0.jpg" alt="" /></div>
+                <div class="m_title">~小情调天使~</div>
+                <div class="s_text">用户等级：VIP会员</div>
+                <div class="s_text">距离升级XXX身份，还差xx有推店主，享受更高权益</div>
+                <div class="weui-flex mx-tops_flex" style="padding-bottom:10px">
+                    <div class="weui-flex__item">
+                        <div class="num_text">263.32</div>
+                        <div class="s_text">今日佣金</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">581</div>
+                        <div class="s_text">本月佣金</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">1526</div>
+                        <div class="s_text">累计佣金</div>
+                    </div>
+                </div>
+                <div class="weui-flex mx-tops_flex" style="padding-top:0">
+                    <div class="weui-flex__item">
+                        <div class="num_text">5896</div>
+                        <div class="s_text">今日金币</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">1584</div>
+                        <div class="s_text">本月金币</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">45861</div>
+                        <div class="s_text">累计金币</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells no_all gao_cells" style="background:none;margin-top:6px;">
+            <a class="weui-cell tc" href="#" style="background:#fff;border-radius:6px;">
+                <div class="weui-cell__bd gao_right mx-tops_flex" style="padding:0;">
+                    <span class="s_text">上月分红</span> <span class="num_text">325</span><span class="s_text">元</span>
+                </div>
+                <div class="weui-cell__bd mx-tops_flex" style="padding:0;">
+                    <span class="s_text">累积分红</span> <span class="num_text">365</span><span class="s_text">元</span>
+                </div>
+            </a>
+        </div>
+        <div class="weui-cells pro_cells">
+            <div class="weui-cell pd20">
+                <div class="weui-cell__hd">
+                    <div class="title_icon"></div>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="m_title">团队成员列表</div>
+                </div>
+            </div>
+            <div class="weui-cell border-left_0 pd20">
+                <div class="weui-cell__date">
+                    <div id="time-format">2018-01-11</div>
+                </div>
+                <div class="weui-cell__text">
+                    <div class="m_title">至</div>
+                </div>
+                <div class="weui-cell__date">
+                    <div id="time-format2">2018-01-11</div>
+                </div>
+                <div class="weui-cell__sbtn">
+                    <img src="../assets/images/my_icon3.png" alt="" />
+                </div>
+            </div>
+            
+        </div>
+        <div class="weui-tab">
+            <div class="weui-navbar">
+                <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                    推广奖励
+                </a>
+                <a class="weui-navbar__item" href="#tab2">
+                    签到奖励
+                </a>
+                <a class="weui-navbar__item" href="#tab3">
+                    业绩奖励
+                </a>
+                <a class="weui-navbar__item" href="#tab4">
+                    月分红奖励
+                </a>
+            </div>
+            <div class="weui-tab__bd">
+                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                    <div class="weui-cells">
+                        <div class="weui-cell pd20">
+                            <div class="weui-cell__bd">
+                                <span class="s_title">2018年1月</span>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <span class="s_title">月收益100.00元</span>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd tc">
+                                <div class="m_text">01-17</div>
+                                <div class="m_text">16:25</div>
+                            </div>
+                            <div class="weui-cell__tui">
+                                <div class="tui-icon">推</div>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="m_text">+10元</div>
+                                <div class="m_text">用户541211通过你下载APP</div>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd tc">
+                                <div class="m_text">01-17</div>
+                                <div class="m_text">16:25</div>
+                            </div>
+                            <div class="weui-cell__tui">
+                                <div class="tui-icon">推</div>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="m_text">+10元</div>
+                                <div class="m_text">用户541211通过你下载APP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="weui-tab__bd-item">
+                    <div class="weui-cells">
+                        <div class="weui-cell pd20">
+                            <div class="weui-cell__bd">
+                                <span class="s_title">2018年1月</span>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <span class="s_title">月收益100.00元</span>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd tc">
+                                <div class="m_text">01-17</div>
+                                <div class="m_text">16:25</div>
+                            </div>
+                            <div class="weui-cell__tui">
+                                <div class="tui-icon">签</div>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="m_text">+10元</div>
+                                <div class="m_text">用户541211通过你下载APP</div>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd tc">
+                                <div class="m_text">01-17</div>
+                                <div class="m_text">16:25</div>
+                            </div>
+                            <div class="weui-cell__tui">
+                                <div class="tui-icon">签</div>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="m_text">+10元</div>
+                                <div class="m_text">用户541211通过你下载APP</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weui-cells">
+                        <div class="weui-cell pd20">
+                            <div class="weui-cell__bd">
+                                <span class="s_title">2018年1月</span>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <span class="s_title">月收益100.00元</span>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd tc">
+                                <div class="m_text">01-17</div>
+                                <div class="m_text">16:25</div>
+                            </div>
+                            <div class="weui-cell__tui">
+                                <div class="tui-icon">签</div>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="m_text">+10元</div>
+                                <div class="m_text">用户541211通过你下载APP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab3" class="weui-tab__bd-item">
+                    <div class="weui-cells">
+                        <div class="weui-cell border-left_0 list_cell">
+                            <div class="weui-cell__hd">
+                                <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                                <div class="x_title">游客</div>
+                                <div class="m_text">2121211</div>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="m_text">
+                                     订单编号：12121213212444
+                                </div>
+                                <div class="m_text">
+                                     购买金额：￥451.36
+                                </div>
+                                <div class="m_text">
+                                     购买时间：2017-10-12 12:36:21
+                                </div>
+                                <div class="m_text">
+                                     此单佣金：￥85.96
+                                </div>
+                                <div class="m_text">
+                                     简单说明：直接购买奖励
+                                </div>
+                                
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab4" class="weui-tab__bd-item">
+                    <div class="weui-cells">
+                        <div class="weui-cell border-left_0 list_cell">
+                            <div class="weui-cell__hd">
+                                <div class="m_text">2018年1月</div>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <div class="m_text">
+                                     个人购买：512.23元
+                                </div>
+                                <div class="m_text">
+                                     直属团队业绩：121451.23元
+                                </div>
+                                <div class="m_text">
+                                     比例：20%
+                                </div>
+                                <div class="m_text">
+                                     总分红：8642.23元
+                                </div>
+                                <div class="m_text">
+                                     扣算：568.69元
+                                </div>
+                                <div class="m_text">
+                                     实际分红金额：2546.69元
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $("#time-format").datetimePicker({
+        title: '请选择日期',
+        yearSplit: '---',
+        monthSplit: '---',
+        times: function () {
+            return [  // 自定义的时间   
+            ];
+        },
+        onChange: function (picker, values, displayValues) {
+            var dates = values.join("-")
+            $("#time-format").text(dates);
+        }
+    });
+    $("#time-format2").datetimePicker({
+        title: '请选择日期',
+        yearSplit: '---',
+        monthSplit: '---',
+        times: function () {
+            return [  // 自定义的时间   
+            ];
+        },
+        onChange: function (picker, values, displayValues) {
+            var dates = values.join("-")
+            $("#time-format2").text(dates);
+        }
+    });
+</script>
+</body>
+</html>

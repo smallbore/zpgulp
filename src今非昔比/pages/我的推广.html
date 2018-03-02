@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>我的推广 </title>
+    <style>
+        .span_btn-white{
+            width:auto;
+            padding:2px 10px;
+            margin-bottom:0;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "我的推广"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="mx-tops">
+            <div class="mx-tops_box">
+                <!-- <div class="mx-tops_right">等级说明 >></div> -->
+                <div class="mx-tops_img"><img src="../assets/images/tx0.jpg" alt="" /></div>
+                <div class="m_title">~小情调天使~</div>
+                <div class="s_text">用户等级：VIP会员</div>
+
+                <div class="weui-flex mx-tops_flex">
+                    <div class="weui-flex__item">
+                        <div class="num_text">56<span class="s_text">个</span></div>
+                        <div class="s_text">今日新增</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">561<span class="s_text">个</span></div>
+                        <div class="s_text">本月总计</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">1526<span class="s_text">个</span></div>
+                        <div class="s_text">累计</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="weui-cells pro_cells">
+            <div class="weui-cell pd20">
+                <div class="weui-cell__hd">
+                    <div class="title_icon"></div>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="m_title">推广列表</div>
+                </div>
+            </div>
+          
+            <div class="weui-cell border-left_0 list_cell weui-cell_access open-popup" data-target="#wxcopy">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                    <!-- <div class="x_title">游客</div>
+                    <div class="m_text">2121211</div> -->
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="m_text">
+                         昵称：~梦幻天使~
+                    </div>
+                    <div class="m_text">
+                         加入时间：2017-10-28
+                    </div>
+                    <div class="m_text">
+                         会员等级：普通会员
+                    </div>
+                   
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="m_text">
+                         赶快互动
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cell list_cell weui-cell_access open-popup" data-target="#wxcopy">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="m_text">
+                        昵称：~梦幻天使~
+                    </div>
+                    <div class="m_text">
+                        加入时间：2017-10-28
+                    </div>
+                    <div class="m_text">
+                        会员等级：普通会员
+                    </div>
+                </div>
+                <div class="weui-cell__ft">
+                    <div class="m_text">
+                         赶快互动
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+</div>
+<!--popup  -->
+<div id="wxcopy" class="weui-popup__container popup-center">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
+        <div class="weui-cells no_all">
+            <div class="weui-cell">
+                <div class="weui-cell__bd"><span class="x_title">TA的资料</span></div>
+                <div class="weui-cell__ft">
+                    <div class="close_btn close-popup">
+                        <img src="../assets/images/my_icon7.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells no_b">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="m_text">昵称：~小情调~</div>
+                </div>
+            </div>
+            <div class="weui-cell no_t pd10">
+                <div class="weui-cell__bd">
+                    <div class="m_text">微信号：XY51421212</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <a class="span_btn span_btn-white" href="javascript:;">复制</a>
+                </div>
+            </div>
+            <div class="weui-cell no_t pd10">
+                <div class="weui-cell__bd">
+                    <div class="m_text">手机号：18345689563</div>
+                </div>
+                <div class="weui-cell__ft">
+                    <a class="span_btn span_btn-white" href="javascript:;">复制</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+
+</script>
+</body>
+</html>

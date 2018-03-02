@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 我的签到 </title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "我的签到"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells no_all my_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="right_ruse">签到奖励</div>
+                    <div class="animin-box">
+                        <div class="qian-btn">立即签到</div>
+                    </div>
+                    <div class="qian-tip">已累计签到2天</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-cells weui-cells_form" style="display:none;">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label for="date3" class="weui-label">日期</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id="date3" type="text">
+                </div>
+            </div>
+        </div>
+        <div id="inline-calendar"></div>
+    </div>
+
+    <div class="bottom_banner">
+        <img src="../assets/images/banner011.jpg" alt="" />
+    </div>
+
+</div>
+<!--popup  -->
+<div id="wxcopy" class="weui-popup__container popup-center qian-popup">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
+        <div class="qian_topimg"><img src="../assets/images/scucss00.png" alt="" /></div>
+        <div clas="weui-cells no_all">
+            <div class="weui-cell pd10">
+                <div class="weui-cell__bd tc">
+                    <div class="h_title">连续签到2天</div>
+                    <div class="m_text">欢迎明天再来！</div>
+                    <div class="qian_image">
+                        <img src="../assets/images/banner-bold.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="small_btn">
+            <a href="javascript:;" class="weui-btn weui-btn_primary close-popup">确认</a>
+        </div>
+       
+    </div>
+</div>
+
+@@include('./include/footer.html')
+
+<script>
+    $(function(){
+        // 获取当前日期 ：xxxx-xx-xx
+         function formatterDateTime() {
+            var date = new Date()
+            var month = date.getMonth() + 1
+            var datetime = date.getFullYear()
+                + "-"// "年"
+                + (month >= 10 ? month : "0" + month)
+                + "-"// "月"
+                + (date.getDate() < 10 ? "0" + date.getDate() : date
+                    .getDate());
+            return datetime;
+        }
+        // 判断数组中是否存在某元素
+        function isInArray(arr, value) {
+            for (var i = 0; i < arr.length; i++) {
+                if (value === arr[i]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+         // 日历构建
+        function qianData(arr) {
+            $("#inline-calendar").calendar({
+                container: "#inline-calendar",
+                yearPickerTemplate: '',
+                monthPickerTemplate: '<div class="small-calendar-picker">' +
+                    '<a href="javascript:;" class="link icon-only picker-calendar-prev-month"><i class="icon icon-prev"></i></a>' +
+                    '<span class="current-year-value"></span>年' +
+                    '<span class="current-month-value"></span>' +
+                    '<a href="javascript:;" class="link icon-only picker-calendar-next-month"><i class="icon icon-next"></i></a>' +
+                    '</div>',
+                monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                inputReadOnly: false,
+                multiple: true,
+                value: arr, //已经签到的日程
+                onChange: function (p, values, displayValues) {
+                    this.value = arr;
+                },
+            });
+        }
+        // 初始化签到的日期数组，默认应为空
+        // var arrValue = ["2018-03-01", "2018-02-28"];
+        var arrValue = [];
+        // 初始化日历构建
+        qianData(arrValue);
+
+        // 点击签到
+        $(".qian-btn").on("click",function(){
+            var newdata = formatterDateTime();
+            var flas = isInArray(arrValue, newdata);
+
+            if (!flas) {
+                arrValue.push(newdata)
+                // 提示签到成功弹窗
+                $("#wxcopy").popup();
+                // 渲染日历已经签到的数组
+                $("#inline-calendar").calendar("updateValue", arrValue);
+            }else{
+                console.log("当天已经签到")
+            }
+
+        })
+       
+       
+    })
+</script>
+</body>
+</html>

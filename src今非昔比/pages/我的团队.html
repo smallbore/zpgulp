@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>我的团队 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "我的团队"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="mx-tops">
+            <div class="mx-tops_box">
+                <div class="mx-tops_right">等级说明 >></div>
+                <div class="mx-tops_img"><img src="../assets/images/tx0.jpg" alt="" /></div>
+                <div class="m_title">~小情调天使~</div>
+                <div class="s_text">用户等级：VIP会员</div>
+                <div class="s_text">距离升级XXX身份，还差xx有推店主，享受更高权益</div>
+                <div class="weui-flex mx-tops_flex">
+                    <div class="weui-flex__item">
+                        <div class="num_text">263.32</div>
+                        <div class="s_text">今日业绩</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">581</div>
+                        <div class="s_text">本月业绩</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">1526</div>
+                        <div class="s_text">累计业绩</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells no_all gao_cells" style="background:none;margin-top:6px;">
+            <a class="weui-cell tc" href="#" style="background:#fff;border-radius:6px;">
+                <div class="weui-cell__bd gao_right mx-tops_flex" style="padding:0;">
+                    <span class="s_text">有推店主</span> <span class="num_text">325</span><span class="s_text">个</span>
+                </div>
+                <div class="weui-cell__bd mx-tops_flex" style="padding:0;">
+                    <span class="s_text">团队店主</span> <span class="num_text">365</span><span class="s_text">个</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="weui-cells pro_cells">
+            <div class="weui-cell pd20">
+                <div class="weui-cell__hd">
+                    <div class="title_icon"></div>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="m_title">团队成员列表</div>
+                </div>
+            </div>
+            <!-- <div class="weui-cell border-left_0">
+                <div class="weui-cell__date">
+                    <div id="time-format">2018-01-11</div>
+                </div>
+                <div class="weui-cell__text">
+                    <div class="m_title">至</div>
+                </div>
+                <div class="weui-cell__date">
+                    <div id="time-format2">2018-01-11</div>
+                </div>
+                <div class="weui-cell__sbtn">
+                    <img src="../assets/images/my_icon3.png" alt="" />
+                </div>
+            </div> -->
+            <div class="weui-cell border-left_0 list_cell">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                    <div class="x_title">游客</div>
+                    <div class="m_text">2121211</div>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="m_text">
+                        用户名：~星月神话~
+                    </div>
+                    <div class="m_text">
+                        等级：店主
+                    </div>
+                    <div class="m_text">
+                        直推店主：3个 (累计)
+                    </div>
+                    <div class="m_text">
+                        直推会员：10个 (累计)
+                    </div>
+                    <div class="m_text">
+                        本月个人购买：￥562.36 (累计)
+                    </div>
+                    <div class="m_text">
+                        本月直属团队业绩：￥589.21 (累计)
+                    </div>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </div>
+            <div class="weui-cell list_cell">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/pro00.jpg" alt="" class="pro_img" />
+                    <div class="x_title">游客</div>
+                    <div class="m_text">2121211</div>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="m_text">
+                        用户名：~星月神话~
+                    </div>
+                    <div class="m_text">
+                        等级：店主
+                    </div>
+                    <div class="m_text">
+                        直推店主：3个 (累计)
+                    </div>
+                    <div class="m_text">
+                        直推会员：10个 (累计)
+                    </div>
+                    <div class="m_text">
+                        本月个人购买：￥562.36 (累计)
+                    </div>
+                    <div class="m_text">
+                        本月直属团队业绩：￥589.21 (累计)
+                    </div>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    // $("#time-format").datetimePicker({
+    //     title: '请选择日期',
+    //     yearSplit: '---',
+    //     monthSplit: '---',
+    //     times: function () {
+    //         return [  // 自定义的时间   
+    //         ];
+    //     },
+    //     onChange: function (picker, values, displayValues) {
+    //         var dates = values.join("-")
+    //         $("#time-format").text(dates);
+    //     }
+    // });
+    // $("#time-format2").datetimePicker({
+    //     title: '请选择日期',
+    //     yearSplit: '---',
+    //     monthSplit: '---',
+    //     times: function () {
+    //         return [  // 自定义的时间   
+    //         ];
+    //     },
+    //     onChange: function (picker, values, displayValues) {
+    //         var dates = values.join("-")
+    //         $("#time-format2").text(dates);
+    //     }
+    // });
+</script>
+</body>
+</html>

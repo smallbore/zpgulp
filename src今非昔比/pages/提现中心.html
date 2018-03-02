@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>提现中心 </title>
+    <style>
+        .zf_icon{width:30px;height:30px;}
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "提现中心"
+        })
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="mx-tops">
+            <div class="mx-tops_box">
+                <div class="mx-tops_img"><img src="../assets/images/tx0.jpg" alt="" /></div>
+                <div class="m_title">~小情调天使~</div>
+                <div class="s_text">用户等级：VIP会员</div>
+                <div class="weui-flex mx-tops_flex">
+                    <div class="weui-flex__item">
+                        <div class="num_text">263.32</div>
+                        <div class="s_text">可提金额</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">581</div>
+                        <div class="s_text">提现待发放</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">296</div>
+                        <div class="s_text">已提金额</div>
+                    </div>
+                    <div class="weui-flex__item">
+                        <div class="num_text">296</div>
+                        <div class="s_text">总计</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells">
+            <div class="weui-cell" style="padding-bottom:10px;">             
+                <div class="weui-cell__bd">
+                    <div class="m_title">提现金额</div>
+                </div>
+            </div>
+            <div class="weui-cell no_t" style="padding-top:0;">
+                <div class="weui-cell__hd">
+                    <div class="tix_input" style="border:none;padding:0;margin:0;"><span>￥</span></div>
+                </div>
+                <div class="weui-cell__bd tix_input" style="border:none;padding:0;margin:0;">
+                    <input class="weui-input" type="text" placeholder="" value="" />
+                </div>
+                <div class="weui-cell__ft"><span class="colbl">全部提现</span></div>
+            </div>
+        </div>
+        <div class="weui-cells">
+            <label class="weui-cell weui-cells_checkbox">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/s_icon1.jpg" alt="" class="zf_icon" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">支付宝
+                    </div>
+                </div>
+                <div class="weui-cell__ft weui-check__label">
+                    <input type="radio" class="weui-check" name="radio1" value="1" checked="checked">
+                    <i class="weui-icon-checked"></i>
+                </div>
+            </label>
+            <label class="weui-cell weui-cells_checkbox">
+                <div class="weui-cell__hd">
+                    <img src="../assets/images/play04.jpg" alt="" class="zf_icon" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">银联
+                    </div>
+                </div>
+                <div class="weui-cell__ft weui-check__label">
+                    <input type="radio" class="weui-check" value="2" name="radio1">
+                    <i class="weui-icon-checked"></i>
+                </div>
+            </label>
+        </div>
+        <div class="weui-cells mt0 no_all js_show" >
+            <div class="js_show" style="display:block">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="x_title">提现收款人</div>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <input class="weui-input x_title tr" value="" placeholder="请输入提现收款人" />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="x_title">提现账号</div>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <input class="weui-input x_title tr" value="" placeholder="请输入提现收款人" />
+                    </div>
+                </div>
+            </div>
+            <div class="js_show" style="display:none">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="x_title">持卡人</div>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <input class="weui-input x_title tr" value="" placeholder="请输入持卡人姓名" />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="x_title">银行卡网点</div>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <input class="weui-input x_title tr" value="" placeholder="请输入银行卡网点" />
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="x_title">银行卡号</div>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <input class="weui-input x_title tr" value="" placeholder="请输入银行卡号" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="small_btn">
+            <a href="提现成功.html" class="weui-btn weui-btn_primary">提现</a>
+        </div>
+        
+        
+    </div>
+
+    
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    
+    
+    $("input[name='radio1']").change(function(){
+        var numval = $("input[name='radio1']:checked").val();
+        $(".js_show").eq(numval).show().siblings().hide();
+    })
+</script>
+</body>
+</html>

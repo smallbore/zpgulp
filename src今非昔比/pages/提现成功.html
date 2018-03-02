@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 提现成功 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "提现成功"
+        })
+    </div>
+
+    <div class="page-bd" style="background:#fff;">
+        <!-- 页面内容-->
+        <div class="user_menu">
+            <div class="login_img">
+                <i class="weui-icon-success weui-icon_msg"></i>
+            </div>
+            <div class="h_title mt20">提现申请已提交</div>
+            <div class="m_text">预计到账时间：2017年8月1日 23:59</div>
+        </div>
+        
+        <div class="small_btn mt20">
+            <a href="javascript:;" class="weui-btn weui-btn_primary ">提现</a>
+            <!-- <a href="javascript:;" class="weui-btn weui-btn_default open-popup" data-target="#fenxiang">立即分享</a> -->
+        </div>
+    </div>
+
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function(){
+      
+    })
+</script>
+</body>
+</html>

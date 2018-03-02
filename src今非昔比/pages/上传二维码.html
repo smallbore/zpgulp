@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title> 微信二维码 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        @@include('./include/page-hd.html', {
+        "title": "微信二维码"
+        })
+    </div>
+
+    <div class="page-bd" style="background-color: #2e3132;">
+        <!-- 页面内容-->
+       <div class="wx-box_up">
+           <div class="wx-box_img">
+               <label class="label-file">
+                    <input type='file' value='' />
+                    <img src="../assets/images/add-wximg.png" class="wx-up_btn" />
+               </label>
+               <div id="wx_img" style="display:none;">
+                    <img src="../assets/images/wx-weixin.jpg" class="wx-weixin" />
+               </div>
+           </div>
+           <div class="pd20 m_text tc" style="padding-bottom:0;">
+                点击上方加号添加
+                <!-- 点击上方二维码修改 -->
+           </div>
+       </div>
+    </div>
+
+</div>
+
+
+@@include('./include/footer.html')
+
+<script>
+    $(function(){
+      
+    })
+</script>
+</body>
+</html>

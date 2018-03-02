@@ -299,8 +299,9 @@
 .swiper_list{
     .swiper-container-horizontal>.swiper-pagination-bullets{bottom:0;}
     .slide_box{
+        display:block;
         .tac();
-        padding-bottom:40px;
+        // padding-bottom:40px;
         img{
             width:92px;
             height:92px;
@@ -862,3 +863,281 @@
     }
 }
 // fenx_box
+
+// xiaoxi 消息
+.xiaoxi{
+    border:1px solid #ccc;
+    border-radius:10px;
+    .fs(@fs24);
+    display:inline-block;
+    padding:2px 16px;
+    margin-right:10px;
+}
+.xiaoxi_col01{
+    color:#1fc0ce;
+    border-color:#1fc0ce;
+}
+.xiaoxi_col02{
+    color:#cea71f;
+    border-color:#cea71f;
+}
+.xiaoxi_col03{
+    color:#1f82ce;
+    border-color:#1f82ce;
+}
+.xiaoxi_col04{
+    color:#e8233e;
+    border-color:#e8233e;
+}
+// xiaoxi
+
+.wx-icon{
+    width:40px;
+    height:40px;
+}
+.tan_icon{
+    width:30px;
+    height:30px;
+    vertical-align: middle;
+    margin-right:6px;
+}
+.span_btn-white{
+    display:block;
+    margin-bottom:14px;
+    background:#fff;
+    color:#292828;
+    border:1px solid #e1e1e1;/*no*/
+    width:160px;
+    padding:6px 0;
+    text-align: center;
+}
+.span_btn-white + .span_btn{
+    display:block;
+    width:160px;
+    padding:6px 0;
+    text-align: center;
+}
+
+.weui-icon_msg{
+    font-size:136px;
+    color:#bf81c6;
+}
+// 二维码
+.wx-box_up{
+    position: absolute;
+    top:50%;
+    left:40px;
+    right:40px;
+    transform:translateY(-50%);
+    background:#fff;
+    padding:32px;
+    .bora(6px);
+    .wx-box_img{
+        background:#f0f0f0;
+        height:600px;
+        width:600px;
+        margin:0 auto;
+        line-height: 600px;
+        text-align: center;
+        .wx-up_btn{
+            width:140px;
+            height:140px;
+            vertical-align: middle;
+        }
+        .wx-weixin{
+            height:600px;
+            width:600px;
+        }
+    }
+}
+.label-file{
+    input{
+        display:none;
+    }
+}
+// mx-tops_right
+.mx-tops_right{
+    position: absolute;
+    top:20px;
+    right:20px;
+    color:#1f82ce;
+    .fs(@fs22);
+}
+
+// weui-cell__tui
+.weui-cell__tui{
+    .tui-icon{
+        width:55px;
+        height:55px;
+        line-height: 55px;
+        background:#f1f1f1;
+        color:#292828;
+        margin:0 42px;
+        .fs(@fs24);
+        .tac();
+        .bora();
+    }
+}
+
+// popup-center
+.popup-center{
+    z-index: 111;
+    .weui-popup__modal{
+        height: auto;
+        bottom:initial;
+        top:50%;
+        width:70%;
+        margin:0 auto;
+        left:0;
+        right:0;
+        transform: translateY(-50%) translateZ(0);
+        border-radius:10px;
+        padding-bottom:20px;
+        background:#fff;
+    }
+}
+
+// right_ruse
+.right_ruse{
+    color:#fff;
+    text-decoration:underline;
+    position: absolute;
+    right:30px;
+    top:10px;
+}
+// qian-btn
+.qian-btn{
+    width:186px;
+    height:186px;
+    line-height: 186px;
+    margin:40px auto;
+    background:#fff;
+    color:@colz;
+    .fs(@fs34);
+    .bora();
+    .tac();
+    .pos(relative);
+    z-index: 2;
+    transition: .2s all linear;
+    &:active{
+        transform: scale(1.1,1.1);
+    }
+}
+.animin-box{
+    .pos(relative);
+    width:186px;
+    height:186px;
+    margin:40px auto;
+    &::before{
+        .pos();
+        left:0;
+        top:0;
+        content:"";
+        height:100%;
+        width:100%;
+        background:rgba(255, 255, 255, 0.6);
+        .bora();
+        animation:c 3s infinite ease-in -1.5s
+    }
+     &::after{
+        .pos();
+        left:0;
+        top:0;
+        content:"";
+        height:100%;
+        width:100%;
+        background:rgba(255, 255, 255, 0.6);
+        .bora();
+        animation:c 3s infinite ease-in -3s
+    }
+}
+.qian-tip{
+    .tac();
+    color:#fff;
+    .fs(@fs24);
+    margin-bottom:20px;
+}
+@keyframes c{
+    0%{opacity:.4;-webkit-transform:scale(1);transform:scale(1)}
+    to{opacity:0;-webkit-transform:scale(1.4);transform:scale(1.4)}
+}
+
+// .picker-calendar-day.picker-calendar-day-selected span 
+// 日期签到
+.picker-calendar-day.picker-calendar-day-selected span{
+    background:@colz;
+}
+.toolbar{
+    background:#fff;
+}
+.picker-calendar-week-days{
+    height: .3rem;
+    .picker-calendar-week-day{
+        line-height: .3rem;
+    }
+}
+.small-calendar-picker{
+    text-align: center;
+    width:100%;
+    line-height: .533333rem;
+    a,span{
+        vertical-align: middle;
+    }
+    a{
+        .icon-prev{
+            margin-right:60px;
+            .pos(relative);
+            background-image:none;
+            &::after{
+                content: "";
+                position: absolute;
+                width: .12rem;
+                height: .12rem;
+                border: .006667rem solid #4b4b4b;
+                border-width: .006667rem 0 0 .006667rem;
+                -webkit-transform: rotate(315deg);
+                transform: rotate(315deg);
+                top: 6px;
+                left: 0;
+            }
+        }
+        .icon-next{
+            margin-left:60px;
+             .pos(relative);
+            background-image:none;
+            &::after{
+                content: "";
+                position: absolute;
+                width: .12rem;
+                height: .12rem;
+                border: .006667rem solid #4b4b4b;
+                border-width: .006667rem 0 0 .006667rem;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+                top: 6px;
+                right: 0;
+            }
+        }
+    }
+}
+.picker-calendar-day{
+    pointer-events: none;
+}
+
+// qian-popup
+.qian-popup{
+     .weui-popup__modal{
+        width:auto;
+        left:46px;
+        right:46px;
+        overflow: initial;
+    }
+    .qian_topimg{
+        width:400px;
+        margin:-40px auto -10px;
+    }
+    .qian_image{
+        width:540px;
+        margin:0 auto;
+    }
+}
